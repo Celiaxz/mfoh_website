@@ -3,6 +3,8 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Feature from "./components/feature/Feature";
 
+// import { Route, Routes } from "react-router-dom";
+import About from "./components/About/About";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -11,6 +13,7 @@ function App() {
       <Navbar />
       <Feature />
       <div className="content"></div>
+      <About />
     </div>
   );
 }
