@@ -12,16 +12,27 @@ export default function AboutUs(props) {
       )}
       {layout === "layout2" && (
         <>
-          <div className="image"></div>
+          <div className="image">
+            {image && <img src={image} alt="about" />}
+          </div>
+          <div className="title">{title}</div>
+          <div className="text">{text}</div>
+        </>
+      )}
+      {layout === "layout3" && (
+        <>
+          <div className="image">
+            {image && <img src={image} alt="about" />}
+          </div>
+          <div className="text">{text}</div>
+        </>
+      )}
+      {layout === "layout4" && (
+        <>
+          <div className="title">{title}</div>
+          <div className="text">{text}</div>
         </>
       )}
     </div>
-    //     <>
-    //       <div>
-    //         {title && <div>{title}</div>}
-    //         <div>{text}</div>
-    //         {image && <img src={image} alt="about us" />}
-    //       </div>
-    //     </>
   );
 }

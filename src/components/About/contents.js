@@ -4,6 +4,7 @@ import logo from "../../assets/Assets_mfoh/logo/logo.jpg";
 
 export const contents = [
   {
+    layout: "layout1",
     title: "Who we are",
     image: `${photoOne}`,
     texts: [
@@ -27,6 +28,7 @@ export const contents = [
     ],
   },
   {
+    layout: "layout2",
     title: "What we do",
     image: `${photoTwo}`,
     texts: [
@@ -42,6 +44,7 @@ export const contents = [
     ],
   },
   {
+    layout: "layout3",
     title: "",
     image: `${logo}`,
     texts: [
@@ -54,6 +57,7 @@ export const contents = [
     ],
   },
   {
+    layout: "layout4",
     title: "Our Vision",
     texts: [
       "A global showcase for female change-makers who believe in the power of\
