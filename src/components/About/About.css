@@ -1,19 +1,75 @@
-/* .sectionOne {
+.aboutUs {
+  padding: 5%;
+}
+
+.aboutUs.layout1 .content {
   display: flex;
-  flex-direction: column;
-  /* text-align: center; */
-/* .aboutTitle {
-  margin-bottom: 3%;
-  margin-left: 25%;
+  align-items: center;
+  gap: 70px;
+  margin-top: 20px;
+}
+.aboutUs.layout1 .title {
+  font-weight: 800;
+  padding-left: 10%;
   text-transform: uppercase;
 }
-.paragraphContainer p {
-  margin-top: 1%;
+.aboutUs.layout1 .text {
+  flex: 1;
+  padding-right: 10px;
+  line-height: 30px;
+  font-weight: 200;
+  font-size: 25px;
+}
+.aboutUs.layout1 .image img {
+  max-width: 100%;
+}
 
-  margin-left: 10%;
-  margin-right: 40%;
-  line-height: 60px;
-  font-weight: 400;
-  font-size: 35px;
-  text-align: justify;
-} */
+.aboutUs.layout2 {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.aboutUs.layout2 .title {
+  font-weight: 800;
+  margin-bottom: 10px;
+  padding-left: 20%;
+  text-transform: uppercase;
+}
+
+.aboutUs.layout2 .text {
+  flex: 1;
+  padding-right: 10px;
+  line-height: 30px;
+  font-weight: 200;
+  font-size: 25px;
+}
+
+.aboutUs.layout3,
+.aboutUs.layout4 {
+  text-align: center;
+}
+.aboutUs.layout3 .image img {
+  max-width: 25%;
+}
+.aboutUs.layout3 .text {
+  flex: 1;
+  padding-right: 10px;
+  line-height: 30px;
+  font-weight: 200;
+  font-size: 25px;
+}
+
+.aboutUs.layout4 .text {
+  flex: 1;
+  padding-right: 10px;
+  line-height: 30px;
+  font-weight: 200;
+  font-size: 25px;
+  /* padding-top: 10px; */
+  margin-top: 15px;
+}
+.aboutUs.layout4 .title {
+  font-weight: 800;
+
+  text-transform: uppercase;
+}

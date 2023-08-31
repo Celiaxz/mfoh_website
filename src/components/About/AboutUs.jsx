@@ -5,9 +5,15 @@ export default function AboutUs(props) {
     <div className={combinedClassName}>
       {layout === "layout1" && (
         <>
-          <div className="title">{title}</div>
-          <div className="text">{text}</div>
-          <div className="image">{image && <img src={image} alt="logo" />}</div>
+          <div className="title">
+            <h1>{title}</h1>
+          </div>
+          <div className="content">
+            <div className="text">{text}</div>
+            <div className="image">
+              {image && <img src={image} alt="logo" />}
+            </div>
+          </div>
         </>
       )}
       {layout === "layout2" && (
@@ -15,8 +21,12 @@ export default function AboutUs(props) {
           <div className="image">
             {image && <img src={image} alt="about" />}
           </div>
-          <div className="title">{title}</div>
-          <div className="text">{text}</div>
+          <div className="content">
+            <div className="title">
+              <h1>{title}</h1>
+            </div>
+            <div className="text">{text}</div>
+          </div>
         </>
       )}
       {layout === "layout3" && (
@@ -29,7 +39,10 @@ export default function AboutUs(props) {
       )}
       {layout === "layout4" && (
         <>
-          <div className="title">{title}</div>
+          <div className="title">
+            {" "}
+            <h1>{title}</h1>
+          </div>
           <div className="text">{text}</div>
         </>
       )}
