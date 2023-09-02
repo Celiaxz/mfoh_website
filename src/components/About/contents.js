@@ -1,5 +1,5 @@
-import photoOne from "../../assets/Assets_mfoh/queens picture/one_removebg.png";
-import photoTwo from "../../assets/Assets_mfoh/queens picture/photo_two.png";
+import photoOne from "../../assets/Assets_mfoh/queens_picture/one_removebg.png";
+import photoTwo from "../../assets/Assets_mfoh/queens_picture/photo_two.png";
 import logo from "../../assets/Assets_mfoh/logo/logo.jpg";
 
 export const contents = [
