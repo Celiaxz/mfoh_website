@@ -25,11 +25,11 @@
 }
 
 .featureTitle {
-  color: #996515;
+  color: #be7b16;
   font-size: 5rem;
   font-weight: 600;
-
   line-height: 80px;
+  text-shadow: 2px 2px 2px rgba(161, 161, 161, 0.482);
 }
 .featureSubTitle {
   font-size: 4rem;
@@ -53,6 +53,33 @@
   background: #c8831c;
   cursor: pointer;
   color: #a2a2a2;
+}
+
+@media only screen and (max-width: 768px) {
+  .feature {
+    background-position: 0rem;
+    background-size: cover;
+  }
+  .featureContent {
+    width: 100%;
+    padding: 0.8rem;
+    justify-self: end;
+  }
+
+  .featureTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  .featureSubTitle {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 300;
+  }
+  .featureContent p {
+    color: #fff;
+    font-size: 1rem;
+  }
 }
 
 @-webkit-keyframes bounce-top {

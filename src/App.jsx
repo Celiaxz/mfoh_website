@@ -5,6 +5,7 @@ import Feature from "./components/feature/Feature";
 
 // import { Route, Routes } from "react-router-dom";
 import About from "./components/About/About";
+import Project from "./components/Project/Project";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -14,6 +15,7 @@ function App() {
       <Feature />
       <div className="content"></div>
       <About />
+      <Project />
     </div>
   );
 }

@@ -1,0 +1,105 @@
+.projectContainer {
+  background: #fff;
+  color: black;
+}
+.projectContainer__items {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.projectContainer__items h1 {
+  color: #747474;
+  padding: 4rem 0 1.5rem 0;
+  font-size: 3rem;
+}
+
+.projectContainer__items_box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.projectContainer__items_box_single {
+  overflow: hidden;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+  width: 49%;
+  height: 400px;
+  position: relative;
+}
+
+.projectContainer__items_box_single img {
+  width: 100%;
+  transform: scale(130%);
+  cursor: pointer;
+}
+
+.projectContainer__items_box_single:hover img {
+  transform: scale(140%);
+  transition: all 1s ease-out;
+}
+.projectTitleContainer {
+  position: absolute;
+
+  bottom: 0;
+  padding: 0.7rem;
+  line-height: 2rem;
+  left: -110%;
+
+  background: linear-gradient(
+    180deg,
+    rgba(66, 66, 66, 0.37) 0%,
+    rgb(56, 56, 56) 33%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  width: 100%;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.projectTitle {
+  color: #be7b16;
+  font-size: 30px;
+  font-weight: 600;
+}
+.projectTitleContainer button {
+  padding: 0.3rem;
+  margin-top: 1rem;
+  background: transparent;
+  border: none;
+  color: #747474;
+}
+.projectTitleContainer button:hover {
+  color: #996515;
+  cursor: pointer;
+}
+
+.projectContainer__items_box_single:hover .projectTitleContainer {
+  left: 0;
+  -webkit-animation: scale-up-hor-center 0.4s
+    cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+@keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
