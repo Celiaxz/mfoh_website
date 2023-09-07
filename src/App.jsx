@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Feature from "./components/feature/Feature";
@@ -7,7 +7,7 @@ import Feature from "./components/feature/Feature";
 import About from "./components/About/About";
 import Project from "./components/Project/Project";
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   return (
     <div>
