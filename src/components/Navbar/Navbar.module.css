@@ -1,6 +1,43 @@
-.container {
+.NavContainer {
   background-color: #2d2d2d;
+  z-index: 1;
 }
+.NavContainer.sticky {
+  position: fixed;
+  width: 100%;
+  -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+@keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+
 .navBar {
   height: 80px;
   display: flex;
@@ -9,6 +46,7 @@
   width: 80%;
   margin: 0 auto;
 }
+
 .navBar .logo {
   width: 75px;
   height: 65px;
@@ -100,6 +138,7 @@
 .loginButton:hover {
   background: #996515;
   color: #fff;
+  transition: all 5s ease-in-out;
 }
 .navListContainer {
   flex: 1;
