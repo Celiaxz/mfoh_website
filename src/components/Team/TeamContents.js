@@ -1,32 +1,32 @@
 export const Teamcontents = [
   {
-    name: "Who we are",
-    image: `${photoOne}`,
+    image: "",
+    name: "Blessing Inyang",
+    description: "National Director, MFOH Nigeria",
   },
   {
-    layout: "layout2",
-    title: "What we do",
-    image: `${photoTwo}`,
+    image: "",
+    name: "Chidiogo Mbanusi",
+    description: "Liaison Officer",
   },
   {
-    layout: "layout3",
-    title: "",
-    image: `${logo}`,
-    texts: [
-      "Our legacy will be measured only by what we've done for “love and for\
-                    humanity.” We believe every woman has a voice and a light to create\
-                    change, and there is no better time to DARE and to be heard than RIGHT\
-                    NOW. Together with our Ambassadors, we are on a mission to light up\
-                    the dark and to leave our mark on earth. Miss Face of Humanity 2023 is\
-                    difference makers from across the world. The time is Now.",
-    ],
+    image: "",
+    name: "Kennedy Onyegbado",
+    description: "",
   },
   {
-    layout: "layout4",
-    title: "Our Vision",
-    texts: [
-      "A global showcase for female change-makers who believe in the power of\
-                                      Humanity to change the world.",
-    ],
+    image: "",
+    name: "Rita Chika Ezenwa",
+    description: "",
+  },
+  {
+    image: "",
+    name: "Cynthia Eze",
+    description: "Web Development Manager",
+  },
+  {
+    image: "",
+    name: "Winner Akpojotor",
+    description: "Social Media Analyst",
   },
 ];
