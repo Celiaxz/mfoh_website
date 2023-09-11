@@ -1,4 +1,5 @@
 import logo from "../../assets/Assets_mfoh/logo/logo.jpg";
+import cynthia from "../../assets/Assets_mfoh/logo/Cynthia_photo.jpg";
 export const Teamcontents = [
   {
     image: `${logo}`,
@@ -21,9 +22,9 @@ export const Teamcontents = [
     description: "Brand Ambassador",
   },
   {
-    image: `${logo}`,
+    image: `${cynthia}`,
     name: "Cynthia Eze",
-    description: "Web Development Manager",
+    description: "Software Development Manager",
   },
   {
     image: `${logo}`,
