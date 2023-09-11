@@ -2,16 +2,21 @@ import { Teamcontents } from "./TeamContents";
 import "./Team.css";
 export default function Team() {
   return (
-    <div className="Team">
-      <h1>Our Fantastic Team </h1>
-      {Teamcontents.map((teamcontent, index) => {
-        return (
-          <div>
-            key = {index}; name={teamcontent.name}
-            <img src="" />
-          </div>
-        );
-      })}
-    </div>
+    <>
+      <h1 className="teamMotto">Our Fantastic Team </h1>
+      <div className="team">
+        {Teamcontents.map((teamcontent, index) => {
+          return (
+            <div className="ourTeam">
+              <div>
+                <img className="teamImage" src={teamcontent.image} />
+              </div>
+              <div>{teamcontent.name}</div>
+              <div>{teamcontent.description}</div>
+            </div>
+          );
+        })}
+      </div>
+    </>
   );
 }
