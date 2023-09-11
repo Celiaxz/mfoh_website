@@ -13,12 +13,12 @@ export const Teamcontents = [
   {
     image: `${logo}`,
     name: "Kennedy Onyegbado",
-    description: "",
+    description: "Brand Strategist",
   },
   {
     image: `${logo}`,
     name: "Rita Chika Ezenwa",
-    description: "",
+    description: "Brand Ambassador",
   },
   {
     image: `${logo}`,
