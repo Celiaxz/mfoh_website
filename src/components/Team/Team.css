@@ -1,7 +1,7 @@
 .teamMotto {
   background-color: black;
   text-align: center;
-  font-size: 50px;
+  font-size: 4rem;
   padding: 1%;
 }
 .team {
@@ -22,4 +22,14 @@
   max-width: 200px;
   border-radius: 50px;
   border-bottom: 2px solid red;
+}
+.teamName {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+.teamDesc {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  line-height: 1.6em;
+  color: #7c6c1b;
 }

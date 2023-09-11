@@ -11,8 +11,8 @@ export default function Team() {
               <div>
                 <img className="teamImage" src={teamcontent.image} />
               </div>
-              <div>{teamcontent.name}</div>
-              <div>{teamcontent.description}</div>
+              <div className="teamName">{teamcontent.name}</div>
+              <div className="teamDesc">{teamcontent.description}</div>
             </div>
           );
         })}
