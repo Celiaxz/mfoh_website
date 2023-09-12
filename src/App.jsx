@@ -8,6 +8,7 @@ import About from "./components/About/About";
 import Project from "./components/Project/Project";
 import Team from "./components/Team/Team";
 import Partner from "./components/Partner/Partner";
+import Ambassador from "./components/Ambassador/Ambassador";
 function App() {
   // const [count, setCount] = useState(0);
 
@@ -20,6 +21,7 @@ function App() {
       <Project />
       <Partner />
       <Team />
+      <Ambassador />
     </div>
   );
 }
