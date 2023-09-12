@@ -1,3 +1,24 @@
+.intro {
+  padding-left: 30%;
+  font-size: 3.5em;
+  color: #996515;
+}
 .Ambassador {
   background-color: black;
+}
+.ambassadorCont {
+  width: 80%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 10%;
+  padding-left: 10%;
+}
+.ambassadorCont p {
+  font-size: 1em;
+  line-height: 30px;
+  text-align: justify;
+}
+.ambassadorCont img {
+  height: 300px;
 }

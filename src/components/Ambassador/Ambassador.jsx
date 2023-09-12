@@ -4,7 +4,6 @@ import photoTwo from "../../assets/Assets_mfoh/queens_picture/photo_two.png";
 
 const ambassadorCont = [
   {
-    title: "Our 2023 Ambassador",
     text: " Ambassador Rita Chika Ezenwa is a native of Isikwuato local government\
   area in Abia state, Nigeria. She holds a Bachelors degree in Economics\
   from ISM Adonai University, Cotonou Benin Republic. She is a beauty\
@@ -16,7 +15,6 @@ const ambassadorCont = [
   },
 
   {
-    title: "Our 2023 Ambassador",
     text: "  Our 2023 Ambassador Ambassador Rita Chika Ezenwa is a native of\
 Isikwuato local government area in Abia state, Nigeria. She holds a\
 Bachelors degree in Economics from ISM Adonai University, Cotonou\
@@ -43,39 +41,50 @@ advocacy is 'Equality for all through Education'  ",
 
 export default function Ambassador() {
   return (
-    <>
-      <div className="Ambassador">
-        <hi>Our 2023 Ambassador</hi>
-      </div>
+    <div className="Ambassador">
+      <h1 className="intro">Our 2023 Ambassador</h1>
+
       {ambassadorCont.map((oneContent) => {
         return (
-          <div className="Ambassador">
-            {oneContent.title}
-            {oneContent.text}
+          <div className="ambassadorCont">
+            <p classname="text">{oneContent.text}</p>
             <div>
               <img src={oneContent.image} alt="" />
             </div>
           </div>
         );
       })}
-    </>
+      <div className="Ambassador">
+        <h1>Why Rita Chika Ezenwa?</h1>
+        <ol>
+          <li>
+            Her passion and love for humanitarian activities which is the main
+            goal of Miss Face of Humanity desirable by the international
+            organisation.
+          </li>
+          <li>
+            Her queenly aura and great personality that attracts people to her
+            naturally.
+          </li>
+          <li>
+            Her hard-working and diligent character that will put the
+            organisation and brands in the forefront of the world Her gentle ,
+            humble, kind, compassionate, loving and respectable character that
+            is easy for many stakeholders to work with.
+          </li>
+          <li>
+            Her beautiful looks and flashy color that many brands will be
+            attracted to easily.
+          </li>
+          <li>
+            Her story is an inspiration for many to learn from Her presence is
+            full of grace, strength and hope
+          </li>
+        </ol>
+      </div>
+      <div className="Ambassador">
+        <h1>Awards</h1>
+      </div>
+    </div>
   );
 }
-
-/* <div className="Ambassador">
-{ambassadorCont.map((onecontent,index ) ={
-return( <div>
- <h1>{onecontent.title}</h1>
-<p>{onecontent.text}</p>
-
-  <img src={onecontent.image} />
-
-</div>
-)
-                    })}
-       
-        
-     
-
-  );
-} */
