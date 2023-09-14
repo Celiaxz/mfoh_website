@@ -54,8 +54,8 @@ export default function Ambassador() {
           </div>
         );
       })}
-      <div className="Ambassador">
-        <h1>Why Rita Chika Ezenwa?</h1>
+      <h1>Why Rita Chika Ezenwa?</h1>
+      <div className="aboutAmbassador">
         <ol>
           <li>
             Her passion and love for humanitarian activities which is the main

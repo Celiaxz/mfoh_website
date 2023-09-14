@@ -22,3 +22,9 @@
 .ambassadorCont img {
   height: 300px;
 }
+.aboutAmbassador {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
