@@ -54,9 +54,12 @@ export default function Ambassador() {
           </div>
         );
       })}
-      <h1>Why Rita Chika Ezenwa?</h1>
+
       <div className="aboutAmbassador">
-        <ol>
+        <h1>Why Rita Chika Ezenwa?</h1>
+      </div>
+      <div className="whyAmbassador">
+        <ul>
           <li>
             Her passion and love for humanitarian activities which is the main
             goal of Miss Face of Humanity desirable by the international
@@ -80,7 +83,7 @@ export default function Ambassador() {
             Her story is an inspiration for many to learn from Her presence is
             full of grace, strength and hope
           </li>
-        </ol>
+        </ul>
       </div>
       <div className="Ambassador">
         <h1>Awards</h1>
