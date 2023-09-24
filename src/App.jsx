@@ -9,6 +9,7 @@ import Project from "./components/Project/Project";
 import Team from "./components/Team/Team";
 import Partner from "./components/Partner/Partner";
 import Ambassador from "./components/Ambassador/Ambassador";
+import Apply from "./components/Apply/Apply";
 function App() {
   // const [count, setCount] = useState(0);
 
@@ -22,6 +23,7 @@ function App() {
       <Partner />
       <Team />
       <Ambassador />
+      <Apply />
     </div>
   );
 }
