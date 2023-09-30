@@ -1,6 +1,7 @@
 import "./Apply.css";
 import { useState } from "react";
 import { db } from "../../firebase";
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 export default function Apply() {
   const [firstName, setFirstname] = useState("");
   const [lastName, setLastname] = useState("");
@@ -32,15 +33,45 @@ export default function Apply() {
     setStateOrigin(e.target.value);
   };
 
-  const submitHandler = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (input) {
+    if (firstName) {
+      await addDoc(collection(db, "registeredCandidates"), {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        phone: phone,
+        objective: objective,
+        birthDate: birthDate,
+        stateOrigin: stateOrigin,
+        timestamp: serverTimestamp(),
+      });
+      setFirstname("");
+      setLastname("");
+      setEmail("");
+      setEmail("");
+      setObjective("");
+      setPhone("");
+      setBirthDate("");
+      setStateOrigin("");
     }
+
+    const newCandidate = {
+      firstName,
+      lastName,
+      email,
+      phone,
+      objective,
+      birthDate,
+      stateOrigin,
+    };
+    console.log("submitted", newCandidate);
   };
+
   return (
     <div className="form">
       <h1 className="applyTitle">Apply Form</h1>
-      <form className="formContainer">
+      <form onSubmit={handleSubmit} className="formContainer">
         <label>
           First Name:
           <input
