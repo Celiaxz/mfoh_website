@@ -2,10 +2,34 @@ import "./Apply.css";
 import { useState } from "react";
 import { db } from "../../firebase";
 export default function Apply() {
-  const [input, setInput] = useState("");
+  const [firstName, setFirstname] = useState("");
+  const [lastName, setLastname] = useState("");
+  const [email, setEmail] = useState("");
+  const [objective, setObjective] = useState("");
+  const [phone, setPhone] = useState("");
+  const [birthDate, setBirthDate] = useState("");
+  const [stateOrigin, setStateOrigin] = useState("");
 
-  const inputHandler = (e) => {
-    setInput(e.target.value);
+  const firstNameHandler = (e) => {
+    setFirstname(e.target.value);
+  };
+  const lastNameHandler = (e) => {
+    setLastname(e.target.value);
+  };
+  const emailHandler = (e) => {
+    setEmail(e.target.value);
+  };
+  const objectiveHandler = (e) => {
+    setObjective(e.target.value);
+  };
+  const phoneeHandler = (e) => {
+    setPhone(e.target.value);
+  };
+  const birthDateHandler = (e) => {
+    setBirthDate(e.target.value);
+  };
+  const stateOriginHandler = (e) => {
+    setStateOrigin(e.target.value);
   };
 
   const submitHandler = (e) => {
@@ -21,63 +45,64 @@ export default function Apply() {
           First Name:
           <input
             type="text"
+            name="firstName"
             placeholder="name"
-            value={input}
-            onChange={inputHandler}
+            value={firstName}
+            onChange={firstNameHandler}
           />
         </label>
         <label>
           Last Name:
           <input
             type="text"
-            name="name"
-            value={input}
-            onChange={inputHandler}
+            name="lastName"
+            value={lastName}
+            onChange={lastNameHandler}
           />
         </label>
         <label>
           Email:
           <input
-            type="text"
-            name="name"
-            value={input}
-            onChange={inputHandler}
+            type="email"
+            name="email"
+            value={email}
+            onChange={emailHandler}
           />
         </label>
         <label>
           Phone:
           <input
             type="text"
-            name="name"
-            value={input}
-            onChange={inputHandler}
+            name="phone"
+            value={phone}
+            onChange={phoneeHandler}
           />
         </label>
         <label>
           What is your reason for contesting:
           <input
             type="text"
-            name="name"
-            value={input}
-            onChange={inputHandler}
+            name="objective"
+            value={objective}
+            onChange={objectiveHandler}
           />
         </label>
         <label>
           Date of birth :
           <input
             type="text"
-            name="name"
-            value={input}
-            onChange={inputHandler}
+            name="birthDate"
+            value={birthDate}
+            onChange={birthDateHandler}
           />
         </label>
         <label>
           State of Origin:
           <input
             type="text"
-            name="name"
-            value={input}
-            onChange={inputHandler}
+            name="stateOrigin"
+            value={stateOrigin}
+            onChange={stateOriginHandler}
           />
         </label>
         <button className="submitBtn"> submit</button>
