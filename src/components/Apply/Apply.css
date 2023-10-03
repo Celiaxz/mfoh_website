@@ -24,6 +24,7 @@
 } */
 .applyTitle {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 label {
@@ -33,7 +34,7 @@ label {
 
 .form {
   display: block;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 input {
   color: black;
