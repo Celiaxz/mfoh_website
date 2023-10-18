@@ -136,7 +136,7 @@ export default function Apply() {
             onChange={stateOriginHandler}
           />
         </label>
-        <button className="submitBtn"> submit</button>
+        <button className="submitBtn"> Pay with Paystack</button>
       </form>
     </div>
   );

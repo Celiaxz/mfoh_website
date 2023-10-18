@@ -41,3 +41,6 @@ input {
   color: black;
   font-weight: 450;
 }
+.submitBtn {
+  color: red;
+}
