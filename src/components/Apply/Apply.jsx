@@ -2,6 +2,8 @@ import "./Apply.css";
 import { useState } from "react";
 import { db } from "../../firebase";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import axios from "axios";
+
 export default function Apply() {
   const [firstName, setFirstname] = useState("");
   const [lastName, setLastname] = useState("");
@@ -67,6 +69,30 @@ export default function Apply() {
     };
     console.log("submitted", newCandidate);
   };
+  const url = "https://missfaceofhumanity.com/paystack_API";
+  const form = new FormData();
+  form.append("lastName", lastName);
+  form.append("firstName", firstName);
+  form.append("phone", phone);
+  form.append("objective", objective);
+  form.append("birthDate", birthDate);
+  form.append("stateOrigin", stateOrigin);
+  form.append("email", email);
+  async function paystackpay(e) {
+    e.preventDefault();
+    await axios
+      .post(url, form, {
+        headers: {
+          "X-Requested": "XMLHttpRequest",
+        },
+      })
+      .then((response) => {
+        let data = "";
+      })
+      .catch(function (error) {
+        console.log("error while handling:", error);
+      });
+  }
 
   return (
     <div className="form">
@@ -136,7 +162,10 @@ export default function Apply() {
             onChange={stateOriginHandler}
           />
         </label>
-        <button className="submitBtn"> Pay with Paystack</button>
+        <button className="submitBtn" onClick={paystackpay}>
+          {" "}
+          Pay with Paystack
+        </button>
       </form>
     </div>
   );
