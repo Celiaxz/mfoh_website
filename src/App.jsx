@@ -11,6 +11,7 @@ import Partner from "./components/Partner/Partner";
 import Ambassador from "./components/Ambassador/Ambassador";
 import Apply from "./components/Apply/Apply";
 import Contact from "./components/Contact/contact";
+import Pay from "./components/Payment/pay";
 function App() {
   // const [count, setCount] = useState(0);
 
@@ -26,6 +27,7 @@ function App() {
       <Ambassador />
       <Apply />
       <Contact />
+      <Pay />
     </div>
   );
 }
