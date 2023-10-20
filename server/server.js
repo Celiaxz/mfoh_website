@@ -1,12 +1,16 @@
+require("dotenv").config();
 const express = require("express");
 const axios = require("axios");
 
 const app = express();
-const port = 5000;
-app.use(express.json());
+const bodyParser = require("body-parser");
+const router = require("./Router/route");
 
-//Define Paystack secret key
-//const paystackSecretkey
+const port = process.env.PORT || 5000;
+//Parse incoming requests with JSON payloads
+app.use(bodyParser.json());
+//call the routers
+app.use(router);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
