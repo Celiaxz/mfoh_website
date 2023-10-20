@@ -4,7 +4,7 @@ const axios = require("axios");
 
 const app = express();
 const bodyParser = require("body-parser");
-const router = require("./Router/route");
+const router = require("./routes");
 
 const port = process.env.PORT || 5000;
 //Parse incoming requests with JSON payloads
