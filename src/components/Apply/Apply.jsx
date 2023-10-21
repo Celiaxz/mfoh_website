@@ -80,98 +80,103 @@ export default function Apply() {
   form.append("email", email);
   async function paystackpay(e) {
     e.preventDefault();
-    await axios
-      .post(url, form, {
-        headers: {
-          "X-Requested": "XMLHttpRequest",
-        },
-      })
+    try {
+      const response = await axios.post(url, form, {
+        headers: { "X-Requested-With": "XMLHttpRequest" },
+      });
 
       //check if the response contains an authorization_url
-      if(response.data && response.data.data && response.data.data.authorization_url ){
-        const authorization_url = response.data.data.authorization_url
-      }
-      .then((response) => {
-        let data = "";
-      })
-      .catch(function (error) {
-        console.log("error while handling:", error);
-      });
-  }
+      if (
+        response.data &&
+        response.data.data &&
+        response.data.data.authorization_url
+      ) {
+        const authorization_url = response.data.data.authorization_url;
+        //Redirect the user to the Paystack checkout page
 
-  return (
-    <div className="form">
-      <h1 className="applyTitle">Apply Form</h1>
-      <form onSubmit={handleSubmit} className="formContainer">
-        <label>
-          First Name:
-          <input
-            type="text"
-            name="firstName"
-            placeholder="name"
-            value={firstName}
-            onChange={firstNameHandler}
-          />
-        </label>
-        <label>
-          Last Name:
-          <input
-            type="text"
-            name="lastName"
-            value={lastName}
-            onChange={lastNameHandler}
-          />
-        </label>
-        <label>
-          Email:
-          <input
-            type="email"
-            name="email"
-            value={email}
-            onChange={emailHandler}
-          />
-        </label>
-        <label>
-          Phone:
-          <input
-            type="text"
-            name="phone"
-            value={phone}
-            onChange={phoneeHandler}
-          />
-        </label>
-        <label>
-          What is your reason for contesting:
-          <input
-            type="text"
-            name="objective"
-            value={objective}
-            onChange={objectiveHandler}
-          />
-        </label>
-        <label>
-          Date of birth :
-          <input
-            type="text"
-            name="birthDate"
-            value={birthDate}
-            onChange={birthDateHandler}
-          />
-        </label>
-        <label>
-          State of Origin:
-          <input
-            type="text"
-            name="stateOrigin"
-            value={stateOrigin}
-            onChange={stateOriginHandler}
-          />
-        </label>
-        <button className="submitBtn" onClick={paystackpay}>
-          {" "}
-          Pay with Paystack
-        </button>
-      </form>
-    </div>
-  );
+        window.location.href = authorization_url;
+      } else {
+        //Handle the case where there is no authorization_url in the response
+        console.error("No authorization_url found in the response ");
+      }
+    } catch (error) {
+      console.error("error while handling:", error);
+    }
+
+    return (
+      <div className="form">
+        <h1 className="applyTitle">Apply Form</h1>
+        <form onSubmit={handleSubmit} className="formContainer">
+          <label>
+            First Name:
+            <input
+              type="text"
+              name="firstName"
+              placeholder="name"
+              value={firstName}
+              onChange={firstNameHandler}
+            />
+          </label>
+          <label>
+            Last Name:
+            <input
+              type="text"
+              name="lastName"
+              value={lastName}
+              onChange={lastNameHandler}
+            />
+          </label>
+          <label>
+            Email:
+            <input
+              type="email"
+              name="email"
+              value={email}
+              onChange={emailHandler}
+            />
+          </label>
+          <label>
+            Phone:
+            <input
+              type="text"
+              name="phone"
+              value={phone}
+              onChange={phoneeHandler}
+            />
+          </label>
+          <label>
+            What is your reason for contesting:
+            <input
+              type="text"
+              name="objective"
+              value={objective}
+              onChange={objectiveHandler}
+            />
+          </label>
+          <label>
+            Date of birth :
+            <input
+              type="text"
+              name="birthDate"
+              value={birthDate}
+              onChange={birthDateHandler}
+            />
+          </label>
+          <label>
+            State of Origin:
+            <input
+              type="text"
+              name="stateOrigin"
+              value={stateOrigin}
+              onChange={stateOriginHandler}
+            />
+          </label>
+          <button className="submitBtn" onClick={paystackpay}>
+            {" "}
+            Pay with Paystack
+          </button>
+        </form>
+      </div>
+    );
+  }
 }
