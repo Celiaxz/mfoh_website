@@ -86,6 +86,11 @@ export default function Apply() {
           "X-Requested": "XMLHttpRequest",
         },
       })
+
+      //check if the response contains an authorization_url
+      if(response.data && response.data.data && response.data.data.authorization_url ){
+        const authorization_url = response.data.data.authorization_url
+      }
       .then((response) => {
         let data = "";
       })
