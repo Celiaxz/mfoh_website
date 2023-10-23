@@ -84,7 +84,7 @@ export default function Apply() {
       const response = await axios.post(url, form, {
         headers: {
           "X-Requested": "XMLHttpRequest",
-          "Content-Type": "application/json",
+
           "Access-Control-Allow-Origin": "*",
         },
       });
