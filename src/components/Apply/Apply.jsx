@@ -37,6 +37,9 @@ export default function Apply() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("sumbmitting form data");
+    console.log("first name:", firstName);
+    console.log("first name:", lastName);
     if (firstName) {
       await addDoc(collection(db, "registeredCandidates"), {
         firstName: firstName,
@@ -69,7 +72,9 @@ export default function Apply() {
     };
     console.log("submitted", newCandidate);
   };
-  const url = "https://missfaceofhumanity.com/paystack_API";
+  // const url = "https://missfaceofhumanitynigeria.com/paystack_API";
+  const url = "http://localhost:5000/acceptpayment";
+  console.log(url);
   const form = new FormData();
   form.append("lastName", lastName);
   form.append("firstName", firstName);
@@ -83,9 +88,7 @@ export default function Apply() {
     try {
       const response = await axios.post(url, form, {
         headers: {
-          "X-Requested": "XMLHttpRequest",
-
-          "Access-Control-Allow-Origin": "*",
+          "X-Requested-With": "XMLHttpRequest",
         },
       });
 
@@ -97,7 +100,7 @@ export default function Apply() {
       ) {
         const authorization_url = response.data.data.authorization_url;
         //Redirect the user to the Paystack checkout page
-
+        console.log("Response from Paystack:", response.data);
         window.location.href = authorization_url;
       } else {
         //Handle the case where there is no authorization_url in the response
