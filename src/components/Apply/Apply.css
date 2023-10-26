@@ -43,4 +43,6 @@ input {
 }
 .submitBtn {
   color: red;
+  font-size: 20px;
+  padding-left: 5%;
 }
