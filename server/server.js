@@ -4,13 +4,13 @@ const axios = require("axios");
 const cors = require("cors");
 
 const app = express();
-const bodyParser = require("body-parser");
+// const bodyParser = require("body-parser");
 const router = require("./routes");
 
 const port = process.env.PORT || 5000;
 const FRONTEND_URL = process.env.ORIGIN || "http://127.0.0.1:5173";
 //Parse incoming requests with JSON payloads
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 //Use the "cors" middleware to enable CORS
 app.use(
@@ -18,6 +18,9 @@ app.use(
     origin: [FRONTEND_URL],
   })
 );
+
+// Middleware for parsing JSON requests
+app.use(express.json());
 //call the routers
 app.use(router);
 

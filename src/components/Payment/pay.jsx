@@ -1,3 +1,3 @@
 export default function Pay() {
-  return <div>pay</div>;
+  return <div>Verification sucessful</div>;
 }

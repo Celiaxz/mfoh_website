@@ -12,6 +12,7 @@ export default function Apply() {
   const [phone, setPhone] = useState("");
   const [birthDate, setBirthDate] = useState("");
   const [stateOrigin, setStateOrigin] = useState("");
+  const [amount, setAmount] = useState(7000 * 100); //Set the amount
 
   const firstNameHandler = (e) => {
     setFirstname(e.target.value);
@@ -99,8 +100,10 @@ export default function Apply() {
         response.data.data.authorization_url
       ) {
         const authorization_url = response.data.data.authorization_url;
+        console.log("this is authorization url:", authorization_url);
         //Redirect the user to the Paystack checkout page
         console.log("Response from Paystack:", response.data);
+        setPayresult();
         window.location.href = authorization_url;
       } else {
         //Handle the case where there is no authorization_url in the response
