@@ -12,7 +12,8 @@ export default function Apply() {
   const [phone, setPhone] = useState("");
   const [birthDate, setBirthDate] = useState("");
   const [stateOrigin, setStateOrigin] = useState("");
-  const [amount, setAmount] = useState(7000 * 100); //Set the amount
+
+  // const [payResult, setPayresult] = useState(""); //Set the amount
 
   const firstNameHandler = (e) => {
     setFirstname(e.target.value);
@@ -87,30 +88,32 @@ export default function Apply() {
   async function paystackpay(e) {
     e.preventDefault();
     try {
-      const response = await axios.post(url, form, {
+      const requestBody = {
+        email: email, // Use the email state variable
+        lastName: lastName,
+        firstName: firstName,
+        phone: phone,
+        objective: objective,
+        birthDate: birthDate,
+        stateOrigin: stateOrigin,
+      };
+      const response = await axios.post(url, requestBody, {
         headers: {
           "X-Requested-With": "XMLHttpRequest",
         },
       });
+      console.log("Response from Paystack:", response);
 
-      //check if the response contains an authorization_url
-      if (
-        response.data &&
-        response.data.data &&
-        response.data.data.authorization_url
-      ) {
+      if (response.data && response.data.data.authorization_url) {
         const authorization_url = response.data.data.authorization_url;
-        console.log("this is authorization url:", authorization_url);
-        //Redirect the user to the Paystack checkout page
-        console.log("Response from Paystack:", response.data);
-        setPayresult();
+        console.log("Authorization URL:", authorization_url);
+        // setPayresult(authorization_url);
         window.location.href = authorization_url;
       } else {
-        //Handle the case where there is no authorization_url in the response
-        console.error("No authorization_url found in the response ");
+        console.error("No authorization_url found in the response");
       }
     } catch (error) {
-      console.error("error while handling:", error);
+      console.error("Error while handling:", error);
     }
   }
   return (
