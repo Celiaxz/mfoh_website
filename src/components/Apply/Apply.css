@@ -1,4 +1,48 @@
-.aboutApply {
+.form {
   background-color: black;
-  color: #996515;
+  opacity: 0.3;
+
+  display: block;
+  padding: 0 20px;
+}
+.formContainer {
+  background-color: black;
+  box-shadow: 0px 0px 5px 0px #104f552a;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 50px 0;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  color: green;
+  /* align-items: center; */
+
+  /* margin-top: 50px; */
+}
+/* .submitBtn {
+  padding: 0 10px;
+} */
+.applyTitle {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form {
+  display: block;
+  padding: 0 40px;
+}
+input {
+  color: black;
+  font-weight: 450;
+}
+.submitBtn {
+  color: red;
+  font-size: 20px;
+  padding-left: 5%;
 }

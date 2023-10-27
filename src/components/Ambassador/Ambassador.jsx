@@ -47,7 +47,7 @@ export default function Ambassador() {
       {ambassadorCont.map((oneContent) => {
         return (
           <div className="ambassadorCont">
-            <p classname="text">{oneContent.text}</p>
+            <p className="text">{oneContent.text}</p>
             <div>
               <img src={oneContent.image} alt="" />
             </div>
