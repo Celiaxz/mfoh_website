@@ -3,6 +3,7 @@ import cynthia from "../../assets/Assets_mfoh/logo/Cynthia_photo.jpg";
 import Ben10 from "../../assets/Assets_mfoh/logo/Ben.jpg";
 import Zen from "../../assets/Assets_mfoh/logo/Zen.jpg";
 import Ble from "../../assets/Assets_mfoh/logo/blessing.jpg";
+import beauty from "../../assets/Assets_mfoh/logo/beauty.jpg";
 export const Teamcontents = [
   {
     image: `${Ble}`,
@@ -30,7 +31,7 @@ export const Teamcontents = [
     description: "Software Development Manager",
   },
   {
-    image: `${logo}`,
+    image: `${beauty}`,
     name: "Winner Akpojotor",
     description: "Social Media Analyst",
   },
