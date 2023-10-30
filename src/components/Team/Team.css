@@ -19,12 +19,16 @@
   text-align: center;
 }
 .teamImage {
-  max-height: 200px;
-  max-width: 200px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   border: 0.4em solid;
   border-bottom: 2px solid #996515;
   transition: all 0.2s ease;
+  /* -webkit-border-radius: 500px; */
+  /* -moz-border-radius: 500px; */
+  /* overflow-clip-margin: content box;
+  overflow: cl; */
 }
 .teamName {
   font-size: 1.5em;
