@@ -1,13 +1,15 @@
 import logo from "../../assets/Assets_mfoh/logo/logo.jpg";
 import cynthia from "../../assets/Assets_mfoh/logo/Cynthia_photo.jpg";
+import Ben10 from "../../assets/Assets_mfoh/logo/Ben.jpg";
+import Zen from "../../assets/Assets_mfoh/logo/Zen.jpg";
 export const Teamcontents = [
   {
-    image: `${logo}`,
+    image: `${Ben10}`,
     name: "Blessing Inyang",
     description: "National Director, MFOH Nigeria",
   },
   {
-    image: `${logo}`,
+    image: `${Zen}`,
     name: "Chidiogo Mbanusi",
     description: "Liaison Officer",
   },
