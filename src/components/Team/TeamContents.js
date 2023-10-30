@@ -4,6 +4,9 @@ import Ben10 from "../../assets/Assets_mfoh/logo/Ben.jpg";
 import Zen from "../../assets/Assets_mfoh/logo/Zen.jpg";
 import Ble from "../../assets/Assets_mfoh/logo/blessing.jpg";
 import beauty from "../../assets/Assets_mfoh/logo/beauty.jpg";
+import diogo from "../../assets/Assets_mfoh/logo/diogo.jpg";
+import Ken from "../../assets/Assets_mfoh/logo/Ken2.jpg";
+// import diogo from "../../assets/Assets_mfoh/logo/diogo.jpg";
 export const Teamcontents = [
   {
     image: `${Ble}`,
@@ -11,7 +14,7 @@ export const Teamcontents = [
     description: "National Director, MFOH Nigeria",
   },
   {
-    image: `${Zen}`,
+    image: `${diogo}`,
     name: "Chidiogo Mbanusi",
     description: "Liaison Officer",
   },
@@ -32,6 +35,21 @@ export const Teamcontents = [
   },
   {
     image: `${beauty}`,
+    name: "Winner Akpojotor",
+    description: "Social Media Analyst",
+  },
+  {
+    image: `${logo}`,
+    name: "Winner Akpojotor",
+    description: "Social Media Analyst",
+  },
+  {
+    image: `${Ken}`,
+    name: "Winner Akpojotor",
+    description: "Social Media Analyst",
+  },
+  {
+    image: `${logo}`,
     name: "Winner Akpojotor",
     description: "Social Media Analyst",
   },
