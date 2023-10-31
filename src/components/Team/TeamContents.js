@@ -1,5 +1,5 @@
 import logo from "../../assets/Assets_mfoh/logo/logo.jpg";
-import cynthia from "../../assets/Assets_mfoh/logo/Cynthia_photo.jpg";
+import cynthia from "../../assets/Assets_mfoh/logo/celia6.jpg";
 import Ben10 from "../../assets/Assets_mfoh/logo/Ben.jpg";
 import Zen from "../../assets/Assets_mfoh/logo/Zen.jpg";
 import Ble from "../../assets/Assets_mfoh/logo/blessing.jpg";
