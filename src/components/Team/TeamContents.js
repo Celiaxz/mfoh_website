@@ -7,6 +7,11 @@ import beauty from "../../assets/Assets_mfoh/logo/beauty.jpg";
 import diogo from "../../assets/Assets_mfoh/logo/diogo.jpg";
 import Ken from "../../assets/Assets_mfoh/logo/Ken2.jpg";
 import Emma from "../../assets/Assets_mfoh/logo/emma.jpg";
+import Kemi from "../../assets/Assets_mfoh/logo/kemi5.jpg";
+
+import Queen from "../../assets/Assets_mfoh/logo/queen2.jpg";
+
+// import Kemi1 from "../../assets/Assets_mfoh/logo/kemi1.jpg";
 export const Teamcontents = [
   {
     image: `${Ble}`,
@@ -24,7 +29,7 @@ export const Teamcontents = [
     description: "Public Relations Officer ",
   },
   {
-    image: `${logo}`,
+    image: `${Queen}`,
     name: "Rita Chika Ezenwa",
     description: "Brand Ambassador",
   },
@@ -46,7 +51,7 @@ export const Teamcontents = [
     description: "Event Manager",
   },
   {
-    image: `${logo}`,
+    image: `${Kemi}`,
     name: "Kemi Kehinde Agi",
     description: "Financial Operations Manager",
   },
