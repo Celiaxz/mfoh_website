@@ -77,14 +77,14 @@ export default function Apply() {
   // const url = "https://missfaceofhumanitynigeria.com/paystack_API";
   const url = "http://localhost:5000/acceptpayment";
   console.log(url);
-  const form = new FormData();
-  form.append("lastName", lastName);
-  form.append("firstName", firstName);
-  form.append("phone", phone);
-  form.append("objective", objective);
-  form.append("birthDate", birthDate);
-  form.append("stateOrigin", stateOrigin);
-  form.append("email", email);
+  // const form = new FormData();
+  // form.append("lastName", lastName);
+  // form.append("firstName", firstName);
+  // form.append("phone", phone);
+  // form.append("objective", objective);
+  // form.append("birthDate", birthDate);
+  // form.append("stateOrigin", stateOrigin);
+  // form.append("email", email);
   async function paystackpay(e) {
     e.preventDefault();
     try {
@@ -132,7 +132,6 @@ export default function Apply() {
                   placeholder="Enter your first name"
                   value={firstName}
                   onChange={firstNameHandler}
-                  required
                 />
               </label>
             </div>

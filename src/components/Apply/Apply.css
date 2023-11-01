@@ -61,6 +61,11 @@ form .user-details .input-box {
 .user-details .input-box input:focus {
   border-color: #996515;
 }
+/* .user-details .input-box .labelTitle::after {
+  content: " *";
+  color: red;
+} */
+
 form button {
   height: 45px;
   margin: 45px 0px;
