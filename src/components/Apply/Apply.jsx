@@ -117,104 +117,113 @@ export default function Apply() {
     }
   }
   return (
-    <div className="form">
-      <h1 className="applyTitle">Registration</h1>
-      <form onSubmit={handleSubmit} className="formContainer">
-        <div className="user-details">
-          <div className="input-box">
-            {" "}
-            <label>
-              First Name:
-              <input
-                type="text"
-                name="firstName"
-                placeholder="name"
-                value={firstName}
-                onChange={firstNameHandler}
-                required
-              />
-            </label>
-          </div>
-          <div className="input-box">
-            {" "}
-            <label>
-              Last Name:
-              <input
-                type="text"
-                name="lastName"
-                value={lastName}
-                onChange={lastNameHandler}
-                required
-              />
-            </label>
-          </div>
-          <div className="input-box">
-            <label>
-              Email:
-              <input
-                type="email"
-                name="email"
-                value={email}
-                onChange={emailHandler}
-              />
-            </label>{" "}
-          </div>
-          <div className="input-box">
-            {" "}
-            <label>
-              Phone:
-              <input
-                type="text"
-                name="phone"
-                value={phone}
-                onChange={phoneeHandler}
-              />
-            </label>
-          </div>
-          <div className="input-box">
-            {" "}
-            <label>
-              What is your reason for contesting:
-              <input
-                type="text"
-                name="objective"
-                value={objective}
-                onChange={objectiveHandler}
-              />
-            </label>
-          </div>
-          <div className="input-box">
-            {" "}
-            <label>
-              Date of birth :
-              <input
-                type="text"
-                name="birthDate"
-                value={birthDate}
-                onChange={birthDateHandler}
-              />
-            </label>
-          </div>
-          <div className="input-box">
-            <label>
-              State of Origin:
-              <input
-                type="text"
-                name="stateOrigin"
-                value={stateOrigin}
-                onChange={stateOriginHandler}
-              />
-            </label>{" "}
-          </div>
-          {/* <div className="button"> </div>
+    <div className="main">
+      <div className="container">
+        <div className="title">Registration</div>
+        <form onSubmit={handleSubmit} className="formContainer">
+          <div className="user-details">
+            <div className="input-box">
+              {" "}
+              <label className="labelTitle">
+                First Name:
+                <input
+                  type="text"
+                  name="firstName"
+                  placeholder="Enter your first name"
+                  value={firstName}
+                  onChange={firstNameHandler}
+                  required
+                />
+              </label>
+            </div>
+            <div className="input-box">
+              {" "}
+              <label className="labelTitle">
+                Last Name:
+                <input
+                  type="text"
+                  name="lastName"
+                  placeholder="Enter your last name"
+                  value={lastName}
+                  onChange={lastNameHandler}
+                  required
+                />
+              </label>
+            </div>
+            <div className="input-box">
+              <label className="labelTitle">
+                Email:
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={emailHandler}
+                />
+              </label>{" "}
+            </div>
+            <div className="input-box">
+              {" "}
+              <label className="labelTitle">
+                Phone:
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Enter your number"
+                  value={phone}
+                  onChange={phoneeHandler}
+                />
+              </label>
+            </div>
+            <div className="input-box">
+              {" "}
+              <label className="labelTitle">
+                Why contest?:
+                <input
+                  type="text"
+                  name="objective"
+                  placeholder="Enter your reason for contesting"
+                  value={objective}
+                  onChange={objectiveHandler}
+                />
+              </label>
+            </div>
+            <div className="input-box">
+              {" "}
+              <label className="labelTitle">
+                Date of birth :
+                <input
+                  type="text"
+                  name="birthDate"
+                  placeholder="Enter your date of birth...DD.MM.YY"
+                  value={birthDate}
+                  onChange={birthDateHandler}
+                />
+              </label>
+            </div>
+            <div className="input-box">
+              <label className="labelTitle">
+                State of Origin:
+                <input
+                  type="text"
+                  name="stateOrigin"
+                  placeholder="Enter your state of origin e.g Abia, FCT, Benue..."
+                  value={stateOrigin}
+                  onChange={stateOriginHandler}
+                />
+              </label>{" "}
+            </div>
+            {/* <div className="button"> </div>
           <div className="input-box"> </div> */}
-
-          <button className="submitBtn" onClick={paystackpay}>
-            {" "}
-            Pay with Paystack
-          </button>
-        </div>
-      </form>
+            <div>
+              <button className="submitBtn" onClick={paystackpay}>
+                {" "}
+                Pay with Paystack
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
