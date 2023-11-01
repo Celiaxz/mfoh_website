@@ -81,3 +81,20 @@ form button {
 form button:hover {
   background: linear-gradient(-135deg, #000102, #603a09);
 }
+
+@media only screen and (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .container form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar {
+    width: 0;
+  }
+}
