@@ -54,7 +54,7 @@ form .user-details .input-box {
   padding-left: 15px;
   font-size: 15px;
   border-bottom-width: 2px;
-  transition: ALL 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .user-details .input-box input:focus {
