@@ -66,7 +66,18 @@ form button {
   margin: 45px 0px;
 }
 form button {
-  color: #000102;
+  color: #eeeeee;
   height: 45px;
   width: 100%;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #000102, #603a09);
+}
+
+form button:hover {
+  background: linear-gradient(-135deg, #000102, #603a09);
 }
