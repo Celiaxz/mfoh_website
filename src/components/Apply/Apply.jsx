@@ -213,14 +213,21 @@ export default function Apply() {
                 />
               </label>{" "}
             </div>
-            {/* <div className="button"> </div>
-          <div className="input-box"> </div> */}
-            <div>
-              <button className="submitBtn" onClick={paystackpay}>
-                {" "}
-                Pay with Paystack
-              </button>
-            </div>
+          </div>
+          {/* <div className="button">
+            <input
+              type="submit"
+              // className="submitBtn"
+              value="Enter your state of "
+              onClick={paystackpay}
+            />
+          </div> */}
+
+          <div className="button">
+            <button className="submitBtn" onClick={paystackpay}>
+              {" "}
+              Pay with Paystack
+            </button>
           </div>
         </form>
       </div>

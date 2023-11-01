@@ -55,8 +55,18 @@ form .user-details .input-box {
   font-size: 15px;
   border-bottom-width: 2px;
   transition: all 0.3s ease;
+  color: #000102;
 }
 
 .user-details .input-box input:focus {
   border-color: #996515;
+}
+form button {
+  height: 45px;
+  margin: 45px 0px;
+}
+form button {
+  color: #000102;
+  height: 45px;
+  width: 100%;
 }
