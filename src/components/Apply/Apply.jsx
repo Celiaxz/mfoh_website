@@ -118,76 +118,102 @@ export default function Apply() {
   }
   return (
     <div className="form">
-      <h1 className="applyTitle">Apply Form</h1>
+      <h1 className="applyTitle">Registration</h1>
       <form onSubmit={handleSubmit} className="formContainer">
-        <label>
-          First Name:
-          <input
-            type="text"
-            name="firstName"
-            placeholder="name"
-            value={firstName}
-            onChange={firstNameHandler}
-          />
-        </label>
-        <label>
-          Last Name:
-          <input
-            type="text"
-            name="lastName"
-            value={lastName}
-            onChange={lastNameHandler}
-          />
-        </label>
-        <label>
-          Email:
-          <input
-            type="email"
-            name="email"
-            value={email}
-            onChange={emailHandler}
-          />
-        </label>
-        <label>
-          Phone:
-          <input
-            type="text"
-            name="phone"
-            value={phone}
-            onChange={phoneeHandler}
-          />
-        </label>
-        <label>
-          What is your reason for contesting:
-          <input
-            type="text"
-            name="objective"
-            value={objective}
-            onChange={objectiveHandler}
-          />
-        </label>
-        <label>
-          Date of birth :
-          <input
-            type="text"
-            name="birthDate"
-            value={birthDate}
-            onChange={birthDateHandler}
-          />
-        </label>
-        <label>
-          State of Origin:
-          <input
-            type="text"
-            name="stateOrigin"
-            value={stateOrigin}
-            onChange={stateOriginHandler}
-          />
-        </label>
-        <button className="submitBtn" onClick={paystackpay}>
-          {" "}
-          Pay with Paystack
-        </button>
+        <div className="user-details">
+          <div className="input-box">
+            {" "}
+            <label>
+              First Name:
+              <input
+                type="text"
+                name="firstName"
+                placeholder="name"
+                value={firstName}
+                onChange={firstNameHandler}
+                required
+              />
+            </label>
+          </div>
+          <div className="input-box">
+            {" "}
+            <label>
+              Last Name:
+              <input
+                type="text"
+                name="lastName"
+                value={lastName}
+                onChange={lastNameHandler}
+                required
+              />
+            </label>
+          </div>
+          <div className="input-box">
+            <label>
+              Email:
+              <input
+                type="email"
+                name="email"
+                value={email}
+                onChange={emailHandler}
+              />
+            </label>{" "}
+          </div>
+          <div className="input-box">
+            {" "}
+            <label>
+              Phone:
+              <input
+                type="text"
+                name="phone"
+                value={phone}
+                onChange={phoneeHandler}
+              />
+            </label>
+          </div>
+          <div className="input-box">
+            {" "}
+            <label>
+              What is your reason for contesting:
+              <input
+                type="text"
+                name="objective"
+                value={objective}
+                onChange={objectiveHandler}
+              />
+            </label>
+          </div>
+          <div className="input-box">
+            {" "}
+            <label>
+              Date of birth :
+              <input
+                type="text"
+                name="birthDate"
+                value={birthDate}
+                onChange={birthDateHandler}
+              />
+            </label>
+          </div>
+          <div className="input-box">
+            <label>
+              State of Origin:
+              <input
+                type="text"
+                name="stateOrigin"
+                value={stateOrigin}
+                onChange={stateOriginHandler}
+              />
+            </label>{" "}
+          </div>
+          {/* <div className="button"> </div>
+          <div className="input-box"> </div> */}
+
+          <button className="submitBtn" onClick={paystackpay}>
+            {" "}
+            Pay with Paystack
+          </button>
+        </div>
       </form>
     </div>
   );
