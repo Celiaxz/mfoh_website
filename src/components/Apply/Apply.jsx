@@ -13,8 +13,6 @@ export default function Apply() {
   const [birthDate, setBirthDate] = useState("");
   const [stateOrigin, setStateOrigin] = useState("");
 
-  // const [payResult, setPayresult] = useState(""); //Set the amount
-
   const firstNameHandler = (e) => {
     setFirstname(e.target.value);
   };
@@ -38,12 +36,11 @@ export default function Apply() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log("sumbmitting form data");
+    console.log("sumbmitting form data to Firestore");
     console.log("first name:", firstName);
-    console.log("first name:", lastName);
+
     if (firstName) {
-      await addDoc(collection(db, "registeredCandidates"), {
+      const result = await addDoc(collection(db, "registeredCandidates"), {
         firstName: firstName,
         lastName: lastName,
         email: email,
@@ -53,6 +50,7 @@ export default function Apply() {
         stateOrigin: stateOrigin,
         timestamp: serverTimestamp(),
       });
+      console.log("Data sent to Firestore sucessfully", result);
       setFirstname("");
       setLastname("");
       setEmail("");
@@ -77,14 +75,7 @@ export default function Apply() {
   // const url = "https://missfaceofhumanitynigeria.com/paystack_API";
   const url = "http://localhost:5000/acceptpayment";
   console.log(url);
-  // const form = new FormData();
-  // form.append("lastName", lastName);
-  // form.append("firstName", firstName);
-  // form.append("phone", phone);
-  // form.append("objective", objective);
-  // form.append("birthDate", birthDate);
-  // form.append("stateOrigin", stateOrigin);
-  // form.append("email", email);
+
   async function paystackpay(e) {
     e.preventDefault();
     try {
@@ -115,12 +106,13 @@ export default function Apply() {
     } catch (error) {
       console.error("Error while handling:", error);
     }
+    handleSubmit();
   }
   return (
     <div className="main">
       <div className="container">
         <div className="title">Registration</div>
-        <form onSubmit={handleSubmit} className="formContainer">
+        <form className="formContainer">
           <div className="user-details">
             <div className="input-box">
               {" "}

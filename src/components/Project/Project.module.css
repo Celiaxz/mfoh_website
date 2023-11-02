@@ -1,5 +1,5 @@
 .projectContainer {
-  background: #fff;
+  background: linear-gradient(135deg, #000102, #603a09);
   color: black;
 }
 .projectContainer__items {
