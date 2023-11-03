@@ -30,9 +30,25 @@ export default function Navbar() {
               styles.navList + " " + `${isToggled ? styles.active : ""}`
             }
           >
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/" className={styles.list}>
+              Home
+            </NavLink>
             {/* <NavLink to="/">Home</NavLink> */}
-            <NavLink to="/about-us">About Us</NavLink>
+            <NavLink to="/about-us" className={styles.list}>
+              About Us
+            </NavLink>
+            <NavLink to="/team" className={styles.list}>
+              Team
+            </NavLink>
+            <NavLink to="/ambassador" className={styles.list}>
+              Our Ambassador
+            </NavLink>
+            <NavLink to="/apply" className={styles.list}>
+              Application
+            </NavLink>
+            <NavLink to="/contact-us" className={styles.list}>
+              Contact
+            </NavLink>
 
             {/* <li>Home</li>
             <li>About Us</li>
