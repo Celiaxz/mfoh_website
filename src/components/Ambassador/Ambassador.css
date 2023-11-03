@@ -1,11 +1,13 @@
+.Ambassador {
+  background-color: black;
+  height: 100vh;
+}
 .intro {
-  padding-left: 30%;
+  padding: 5% 0% 0% 30%;
   font-size: 3.5em;
   color: #996515;
 }
-.Ambassador {
-  background-color: black;
-}
+
 .ambassadorCont {
   width: 80%;
   display: flex;
