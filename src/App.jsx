@@ -10,25 +10,8 @@ import Partner from "./components/Partner/Partner";
 import Ambassador from "./components/Ambassador/Ambassador";
 import Apply from "./components/Apply/Apply";
 import Contact from "./components/Contact/Contact";
-// import Pay from "./components/Payment/pay";
+import Footer from "./components/Footer/footer";
 function App() {
-  // const [count, setCount] = useState(0);
-
-  // return (
-  //   <div>
-  //     <Navbar />
-  //     <Feature />
-  //     <div className="content"></div>
-  //     <About />
-  //     <Project />
-  //
-  //     <Team />
-  //     <Ambassador />
-  //     <Apply />
-  //     <Contact />
-  //     <Pay />
-  //   </div>
-  // );
   return (
     <>
       <Navbar />
@@ -47,6 +30,7 @@ function App() {
       <Partner /> */}
 
       {/* <Team /> */}
+      <Footer />
     </>
   );
 }
