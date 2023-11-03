@@ -3,8 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Feature from "./components/feature/Feature";
-
-// import { Route, Routes } from "react-router-dom";
 import About from "./components/About/About";
 import Project from "./components/Project/Project";
 import Team from "./components/Team/Team";
@@ -42,9 +40,11 @@ function App() {
         <Route path="/ambassador" element={<Ambassador />} />
         <Route path="/apply" element={<Apply />} />
         <Route path="/contact-us" element={<Contact />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/partner-with-us" element={<Partner />} />
       </Routes>
-      <Project />
-      <Partner />
+      {/* <Project />
+      <Partner /> */}
 
       {/* <Team /> */}
     </>

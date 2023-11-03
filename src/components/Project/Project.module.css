@@ -1,6 +1,7 @@
 .projectContainer {
-  background: linear-gradient(135deg, #000102, #603a09);
+  background: black;
   color: black;
+  height: 100vh;
 }
 .projectContainer__items {
   width: 80%;
