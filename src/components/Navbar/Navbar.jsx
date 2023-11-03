@@ -49,16 +49,32 @@ export default function Navbar() {
             <NavLink to="/contact-us" className={styles.list}>
               Contact
             </NavLink>
-
-            <NavLink className={styles.dropDown}>
+            <li className={styles.list}>
               More
-              <NavLink to="/project" className={styles.list}>
-                Project
-              </NavLink>
-              <NavLink to="/partner-with-us" className={styles.list}>
-                Partner with us
-              </NavLink>
-            </NavLink>
+              <ul className={styles.dropDown}>
+                <li className={styles.list}>
+                  {" "}
+                  <NavLink to="/project">Project</NavLink>
+                </li>
+
+                <li className={styles.list}>
+                  <NavLink to="/partner-with-us">Partner with us</NavLink>
+                </li>
+              </ul>
+            </li>
+            {/* <li>Home</li>
+            <li>About Us</li>
+            <li>Team</li>
+            <li>Our ambassador</li>
+            <li>Application</li>
+            <li>Contact </li>
+            <li>
+              More
+              <ul className={styles.dropDown}>
+                <li>Project</li>
+                <li>Partner with us</li>
+              </ul>
+            </li> */}
           </div>
         </div>
         <div className={styles.login}>

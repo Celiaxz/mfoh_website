@@ -78,7 +78,7 @@
   display: none;
 }
 
-.dropDown li {
+.dropDown .list {
   width: 155px;
 }
 .navList .list:hover {
@@ -87,7 +87,7 @@
   cursor: pointer;
 }
 
-.navList li:hover .dropDown {
+.navList .list:hover .dropDown {
   display: block;
   -webkit-animation: scale-up-hor-center 0.4s
     cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -115,7 +115,7 @@
   }
 }
 
-.dropDown li:hover {
+.dropDown .list:hover {
   /* color: #2d2d2d; */
   background: #131313;
 }
