@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import logo from "../../assets/Assets_mfoh/logo/logo.jpg";
 import styles from "./Navbar.module.css";
@@ -24,12 +25,16 @@ export default function Navbar() {
           <img src={logo} alt="logo" />
         </div>
         <div className={styles.navListContainer}>
-          <ul
+          <div
             className={
               styles.navList + " " + `${isToggled ? styles.active : ""}`
             }
           >
-            <li>Home</li>
+            <NavLink to="/">Home</NavLink>
+            {/* <NavLink to="/">Home</NavLink> */}
+            <NavLink to="/about-us">About Us</NavLink>
+
+            {/* <li>Home</li>
             <li>About Us</li>
             <li>Team</li>
             <li>Our ambassador</li>
@@ -41,8 +46,8 @@ export default function Navbar() {
                 <li>Project</li>
                 <li>Partner with us</li>
               </ul>
-            </li>
-          </ul>
+            </li> */}
+          </div>
         </div>
         <div className={styles.login}>
           <button className={styles.loginButton}>
