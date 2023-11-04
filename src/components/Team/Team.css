@@ -1,23 +1,32 @@
+.teamMain {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #000102, #603a09);
+  background-color: rgb(78, 76, 76);
+}
+.teamCont {
+  max-width: 80%;
+  width: 100%;
+  background-color: #000102;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
 .teamMotto {
-  background-color: black;
   text-align: center;
   font-size: 3.5em;
   padding: 1%;
   color: #996515;
 }
 .team {
-  background-color: black;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   text-align: center;
 }
-.ourTeam {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+
 .teamImage {
   height: 200px;
   width: 200px;
@@ -25,10 +34,6 @@
   border: 0.4em solid;
   border-bottom: 2px solid #996515;
   transition: all 0.2s ease;
-  /* -webkit-border-radius: 500px; */
-  /* -moz-border-radius: 500px; */
-  /* overflow-clip-margin: content box;
-  overflow: cl; */
 }
 .teamName {
   font-size: 1.5em;
