@@ -8,9 +8,10 @@ import Project from "./components/Project/Project";
 import Team from "./components/Team/Team";
 import Partner from "./components/Partner/Partner";
 import Ambassador from "./components/Ambassador/Ambassador";
-import Apply from "./components/Apply/Apply";
+import Apply from "./components/Apply/ApplyForm";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/footer";
+import Application from "./components/Apply/ApplicationRequire";
 function App() {
   return (
     <>
@@ -31,6 +32,7 @@ function App() {
 
       {/* <Team /> */}
       <Footer />
+      <Application />
     </>
   );
 }
