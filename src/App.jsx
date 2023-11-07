@@ -8,7 +8,7 @@ import Project from "./components/Project/Project";
 import Team from "./components/Team/Team";
 import Partner from "./components/Partner/Partner";
 import Ambassador from "./components/Ambassador/Ambassador";
-import Apply from "./components/Apply/ApplyForm";
+// import Apply from "./components/Apply/ApplyForm";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/footer";
 import Application from "./components/Apply/ApplicationRequire";
@@ -22,7 +22,7 @@ function App() {
         <Route path="/" element={<Feature />} />
         <Route path="/team" element={<Team />} />
         <Route path="/ambassador" element={<Ambassador />} />
-        <Route path="/apply" element={<Apply />} />
+        {/* <Route path="/apply" element={<Apply />} /> */}
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/project" element={<Project />} />
         <Route path="/partner-with-us" element={<Partner />} />
