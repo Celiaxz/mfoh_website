@@ -1,6 +1,7 @@
+import "./ApplicationReqirement.css";
 export default function Application() {
   return (
-    <div className="container">
+    <div className="applicationContMain">
       <div className="appyContainer">
         <div className="description">APPLY FOR 2024 EDITION</div>
         <div className="requirement">
