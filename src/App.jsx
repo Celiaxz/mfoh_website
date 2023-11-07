@@ -31,8 +31,9 @@ function App() {
       <Partner /> */}
 
       {/* <Team /> */}
-      <Footer />
+
       <Application />
+      <Footer />
     </>
   );
 }
