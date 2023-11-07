@@ -110,7 +110,7 @@ export default function Apply() {
   }
   return (
     <div className="main">
-      <div className="container">
+      <div className="appyFormContainer">
         <div className="title">Registration</div>
         <form className="formContainer">
           <div className="user-details">

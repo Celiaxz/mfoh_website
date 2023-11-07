@@ -1,26 +1,26 @@
 .main {
   display: flex;
   justify-content: center;
-  height: 87vh;
+  height: 80vh;
   align-items: center;
   padding: 10px;
   background: linear-gradient(135deg, #000102, #603a09);
   /* opacity: 0.3; */
   /* #500d2f */
 }
-.container {
+.appyFormContainer {
   max-width: 900px;
   width: 100%;
   background-color: #000102;
   padding: 25px 30px;
   border-radius: 5px;
 }
-.container .title {
+.appyFormContainer .title {
   font-size: 40px;
   font-weight: 500;
   position: relative;
 }
-.container .title::before {
+.appyFormContainer .title::before {
   content: "";
   position: absolute;
   left: 0;
@@ -30,7 +30,7 @@
   background-color: #996515;
 }
 
-.container form .user-details {
+.appyFormContainer form .user-details {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -88,14 +88,14 @@ form button:hover {
 }
 
 @media only screen and (max-width: 584px) {
-  .container {
+  .appyFormContainer {
     max-width: 100%;
   }
   form .user-details .input-box {
     margin-bottom: 15px;
     width: 100%;
   }
-  .container form .user-details {
+  .appyFormContainer form .user-details {
     max-height: 300px;
     overflow-y: scroll;
   }
