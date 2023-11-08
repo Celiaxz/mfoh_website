@@ -20,6 +20,7 @@ export const Teamcontents = [
   },
   {
     image: `${diogo}`,
+
     name: "Chidiogo Mbanusi",
     description: "Liaison Officer",
   },
