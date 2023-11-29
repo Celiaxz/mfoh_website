@@ -30,7 +30,7 @@ function Footer() {
                 </div>
               </div>
               <div className="col-auto">
-                <button type="submit" className="">
+                <button type="submit" className="subscribeBtn">
                   Subscribe
                 </button>
               </div>

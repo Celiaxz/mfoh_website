@@ -3,3 +3,8 @@ footer {
   margin: 0;
   padding-top: 10px;
 }
+
+.col-auto button {
+  background: linear-gradient(135deg, #000102, #603a09);
+  padding: 10px;
+}
