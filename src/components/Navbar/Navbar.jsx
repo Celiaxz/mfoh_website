@@ -46,9 +46,9 @@ export default function Navbar() {
             <NavLink to="/apply" className={styles.list}>
               Application
             </NavLink>
-            <NavLink to="/contact-us" className={styles.list}>
+            {/* <NavLink to="/contact-us" className={styles.list}>
               Contact
-            </NavLink>
+            </NavLink> */}
             <li className={styles.list}>
               More
               <ul className={styles.dropDown}>

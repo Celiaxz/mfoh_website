@@ -10,7 +10,7 @@ import Project from "./components/Project/Project";
 import Team from "./components/Team/Team";
 import Partner from "./components/Partner/Partner";
 import Ambassador from "./components/Ambassador/Ambassador";
-import Contact from "./components/Contact/Contact";
+// import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Application from "./components/Apply/ApplicationRequire";
 function App() {
@@ -23,7 +23,7 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/ambassador" element={<Ambassador />} />
 
-        <Route path="/contact-us" element={<Contact />} />
+        {/* <Route path="/contact-us" element={<Contact />} /> */}
         <Route path="/project" element={<Project />} />
         <Route path="/partner-with-us" element={<Partner />} />
         <Route path="/apply" element={<Application />} />

@@ -1,8 +1,12 @@
 import React from "react";
-// import { library } from "@fortawesome/fontawesome-svg-core";
-// import { fab } from "@fortawesome/free-brands-svg-icons";
-// import { fal } from "@fortawesome/pro-light-svg-icons";
-// library.add(fab, fal);
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faTwitter,
+  faGoogle,
+  faInstagram,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 
 import "./Footer.css";
 function Footer() {
@@ -47,7 +51,7 @@ function Footer() {
             href="#!"
             role="button"
           >
-            <i className="fab fa-facebook-f"></i>
+            <FontAwesomeIcon icon={faFacebookF} />
           </a>
           <a
             className="btn btn-primary btn-floating m-1"
@@ -55,23 +59,23 @@ function Footer() {
             href="#!"
             role="button"
           >
-            <i className="fab fa-twitter"></i>
+            <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <a
+          {/* <a
             className="btn btn-primary btn-floating m-1"
             style={{ backgroundColor: "#dd4b39" }}
             href="#!"
             role="button"
           >
-            <i className="fab fa-google"></i>
-          </a>
+            <FontAwesomeIcon icon={faGoogle} />
+          </a> */}
           <a
             className="btn btn-primary btn-floating m-1"
             style={{ backgroundColor: "#ac2bac" }}
             href="#!"
             role="button"
           >
-            <i className="fab fa-instagram"></i>
+            <FontAwesomeIcon icon={faInstagram} />
           </a>
           <a
             className="btn btn-primary btn-floating m-1"
@@ -79,15 +83,7 @@ function Footer() {
             href="#!"
             role="button"
           >
-            <i className="fab fa-linkedin-in"></i>
-          </a>
-          <a
-            className="btn btn-primary btn-floating m-1"
-            style={{ backgroundColor: "#333333" }}
-            href="#!"
-            role="button"
-          >
-            <i className="fab fa-github"></i>
+            <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
         </section>
       </div>
@@ -96,9 +92,9 @@ function Footer() {
         className="text-center p-3"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
-        © 2020 Copyright:
+        © 2019 Copyright:
         <a className="text-white" href="https://mdbootstrap.com/">
-          MDBootstrap.com
+          missfaceofhumanity
         </a>
       </div>
     </footer>
