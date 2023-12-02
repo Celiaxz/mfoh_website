@@ -75,7 +75,7 @@ export default function Apply() {
   const url =
     "https://us-central1-mfoh-server.cloudfunctions.net/mfoh/acceptpayment";
   // const url = "http://localhost:5000/acceptpayment";
-  console.log(url);
+  // console.log(url);
 
   async function paystackpay(e) {
     e.preventDefault();
