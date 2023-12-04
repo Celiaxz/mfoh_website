@@ -35,13 +35,13 @@ export default function Navbar() {
             </NavLink>
             {/* <NavLink to="/">Home</NavLink> */}
             <NavLink to="/about-us" className={styles.list}>
-              About Us
+              About
             </NavLink>
             <NavLink to="/team" className={styles.list}>
               Team
             </NavLink>
             <NavLink to="/ambassador" className={styles.list}>
-              Our Ambassador
+              Ambassador
             </NavLink>
             <NavLink to="/apply" className={styles.list}>
               Application

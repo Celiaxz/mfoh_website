@@ -17,17 +17,24 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes>
+      {/* <Routes>
         <Route path="/about-us" element={<About />} />
         <Route path="/" element={<Feature />} />
         <Route path="/team" element={<Team />} />
         <Route path="/ambassador" element={<Ambassador />} />
 
-        {/* <Route path="/contact-us" element={<Contact />} /> */}
         <Route path="/project" element={<Project />} />
         <Route path="/partner-with-us" element={<Partner />} />
         <Route path="/apply" element={<Application />} />
-      </Routes>
+      </Routes> */}
+      <Feature />
+      <About />
+
+      <Ambassador />
+      <Project />
+      <Partner />
+      <Application />
+      <Team />
       <Footer />
     </>
   );

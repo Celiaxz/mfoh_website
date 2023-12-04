@@ -18,7 +18,10 @@ function Footer() {
             <div className="row d-flex justify-content-center">
               <div className="col-auto">
                 <p className="pt-2">
-                  <strong>Sign up for our newsletter</strong>
+                  <strong>Subscribe to our newsletter</strong>
+                  <p>
+                    to receive the latest news, editoials , campaigns and more{" "}
+                  </p>
                 </p>
               </div>
               <div className="col-md-5 col-12">

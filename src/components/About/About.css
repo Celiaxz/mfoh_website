@@ -4,16 +4,21 @@
 }
 
 .aboutUs.layout1 .content {
+  max-width: 80%;
   display: flex;
   align-items: center;
-  gap: 70px;
+  gap: 30%;
   margin-top: 20px;
 }
-.aboutUs.layout1 .title {
+h1 {
+  font-size: 2.5rem;
   font-weight: 800;
-  padding-left: 10%;
   text-transform: uppercase;
+  padding-top: 5%;
 }
+/* .aboutUs.layout1 .title {
+  padding-left: 10%;
+} */
 .aboutUs.layout1 .text {
   flex: 1;
   padding-right: 10px;
@@ -83,4 +88,11 @@
   .aboutUs.layout2 {
     flex-direction: column;
   }
+}
+
+@media screen and (max-width: 300px) {
+  /* .aboutUs.layout1 .text {
+    
+    font-size: 10px;
+  } */
 }
