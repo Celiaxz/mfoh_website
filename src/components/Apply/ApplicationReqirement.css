@@ -10,7 +10,7 @@
 .appyContainer .description {
   font-size: 2em;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 3%;
   color: #996515;
   font-weight: 700;
 }
@@ -21,7 +21,7 @@
   padding: 25px 30px 0px 70px;
 }
 .appyContainer .requirement .requirementTitle {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #614d2f;
   text-align: center;
   font-weight: 400;

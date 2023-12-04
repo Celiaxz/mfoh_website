@@ -61,14 +61,14 @@ function Footer() {
           >
             <FontAwesomeIcon icon={faTwitter} />
           </a>
-          {/* <a
+          <a
             className="btn btn-primary btn-floating m-1"
             style={{ backgroundColor: "#dd4b39" }}
             href="#!"
             role="button"
           >
             <FontAwesomeIcon icon={faGoogle} />
-          </a> */}
+          </a>
           <a
             className="btn btn-primary btn-floating m-1"
             style={{ backgroundColor: "#ac2bac" }}
