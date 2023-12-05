@@ -8,11 +8,7 @@
   background-color: rgb(78, 76, 76);
 }
 .teamCont {
-  /* max-width: 80%;
-  width: 100%; */
   background-color: #000102;
-  /* padding: 25px 30px;
-  border-radius: 5px; */
 }
 .teamMotto {
   text-align: center;
@@ -20,17 +16,12 @@
   padding: 1%;
   color: #996515;
 }
-/* .team {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  text-align: center;
-} */
+
 .ourTeam {
   max-width: 80%;
   width: 100%;
   background-color: #000102;
-  padding: 25px 30px;
+  padding: 30px 30px;
   border-radius: 5px;
 }
 
