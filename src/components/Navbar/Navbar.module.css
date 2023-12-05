@@ -42,7 +42,7 @@
   height: 80px;
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   width: 80%;
   margin: 0 auto;
 }
@@ -147,7 +147,8 @@ NavLink {
 .navListContainer {
   flex: 1;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
+
   margin-right: 0.5rem;
 }
 .phoneMenu {
