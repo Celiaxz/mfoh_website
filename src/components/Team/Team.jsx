@@ -10,7 +10,7 @@ export default function Team() {
             {Teamcontents.map((teamcontent, index) => {
               return (
                 <div key={index} className="flex items-center justify-center">
-                  <div className="ourTeam">
+                  <div className="ourTeam flex flex-col items-center justify-center">
                     <div>
                       <img className="teamImage" src={teamcontent.image} />
                     </div>
