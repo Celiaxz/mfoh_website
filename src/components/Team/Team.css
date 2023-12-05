@@ -20,12 +20,12 @@
   padding: 1%;
   color: #996515;
 }
-.team {
+/* .team {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   text-align: center;
-}
+} */
 .ourTeam {
   max-width: 80%;
   width: 100%;

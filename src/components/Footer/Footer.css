@@ -7,4 +7,13 @@ footer {
 .col-auto button {
   background: linear-gradient(135deg, #000102, #603a09);
   padding: 10px;
+  font-size: 0.5em;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 200px) {
+  .col-auto button {
+    font-size: 0.3em;
+    padding: 5px;
+  }
 }

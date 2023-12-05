@@ -6,7 +6,7 @@ export default function Team() {
       <div className="teamMain">
         <div className="teamCont">
           <h1 className="teamMotto">Our Fantastic Team </h1>
-          <div className="team">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
             {Teamcontents.map((teamcontent, index) => {
               return (
                 <div className="ourTeam">
