@@ -8,7 +8,7 @@
   /* display: flex;
   flex-direction: row;
   justify-content: center;*/
-  align-items: center;
+  /* align-items: center; */
 }
 
 .contentone {
@@ -109,30 +109,36 @@
 .aboutUs.layout4 {
   text-align: center;
 }
-.aboutUs.layout3 .image img {
-  max-width: 25%;
+.aboutUs.layout3 .image3 img {
+  max-width: 15%;
+  /* align-items: center;
+  align-content: center; */
+  margin-left: 40%;
 }
 .aboutUs.layout3 .text {
   flex: 1;
   padding-right: 10px;
-  line-height: 30px;
+  /* line-height: 30px; */
   font-weight: 200;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 1rem;
 }
 
 .aboutUs.layout4 .text {
   flex: 1;
   padding-right: 10px;
-  line-height: 30px;
+  /* line-height: 30px; */
   font-weight: 200;
-  font-size: 20px;
+  /* font-size: 20px; */
   padding-top: 10px;
   margin-top: 15px;
 }
 .aboutUs.layout4 .title {
   font-weight: 800;
-
+  font-size: 1.5rem;
   text-transform: uppercase;
+  color: #be7b16;
+  text-shadow: 1px 1px 1px rgba(207, 207, 207, 0.6);
 }
 
 @media only screen and (max-width: 768px) {
