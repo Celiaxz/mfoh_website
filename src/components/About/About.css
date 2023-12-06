@@ -1,54 +1,108 @@
 .aboutUs {
   padding: 5%;
   background: #1c1c1c;
+  overflow: hidden;
+  /* background: url("../../assets/Assets_mfoh/queens_picture/one_removebg.png")
+    no-repeat left fixed; */
+  /* background-color: #000; */
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;*/
+  align-items: center;
 }
 
-.aboutUs.layout1 .content {
-  max-width: 80%;
+.contentone {
+  max-width: 100%;
   display: flex;
   align-items: center;
-  gap: 30%;
-  margin-top: 20px;
+  /* background-color: red; */
 }
-h1 {
-  font-size: 2.5rem;
+.aboutUs.layout1 .textone {
+  max-width: 60%;
+
+  flex: 1;
+  text-align: center;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 10%;
+  margin-top: -8%;
+}
+
+.aboutUs.layout1 h1 {
   font-weight: 800;
+  font-size: 1.5rem;
   text-transform: uppercase;
-  padding-top: 5%;
+  align-items: center;
+  color: #be7b16;
+  padding-right: 50%;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(207, 207, 207, 0.6);
 }
 /* .aboutUs.layout1 .title {
   padding-left: 10%;
 } */
-.aboutUs.layout1 .text {
+/* .aboutUs.layout1 .text {
   flex: 1;
   padding-right: 10px;
   line-height: 30px;
   font-weight: 200;
   font-size: 20px;
-}
+} */
 .aboutUs.layout1 .image img {
-  max-width: 100%;
+  /* max-width: 100%; */
   transform: scale(120%);
+  flex: 1;
+  margin-bottom: 11%;
 }
 
-.aboutUs.layout2 {
+/* layout 2 */
+
+.aboutUs.layout2 .image {
+  /* max-width: 100%; */
+  flex-grow: 2;
+  /* flex-grow: 2;
+  flex: 1;
+  padding-bottom: -10rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; */
+  transform: scale(100%);
+
+  max-width: 70%;
+
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.contenttwo {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+}
+/* .aboutUs.layout2 {
   display: flex;
   align-items: center;
   gap: 70px;
-}
-.aboutUs.layout2 .title {
+} */
+/* .aboutUs.layout2 .title {
   font-weight: 800;
   margin-bottom: 10px;
   padding-left: 20%;
   text-transform: uppercase;
-}
+} */
 
-.aboutUs.layout2 .text {
+.aboutUs.layout2 .texttwo {
   flex: 1;
-  padding-right: 10px;
+  max-width: 50%;
+  /* flex-grow: 2; */
+  /* padding-right: 10px;
   line-height: 30px;
   font-weight: 200;
-  font-size: 20px;
+  font-size: 20px; */
+
+  /* flex-grow: 2; */
 }
 
 .aboutUs.layout3,
@@ -72,7 +126,7 @@ h1 {
   line-height: 30px;
   font-weight: 200;
   font-size: 20px;
-  /* padding-top: 10px; */
+  padding-top: 10px;
   margin-top: 15px;
 }
 .aboutUs.layout4 .title {
