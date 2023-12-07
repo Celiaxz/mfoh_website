@@ -61,7 +61,7 @@
 /* layout 2 */
 
 .aboutUs.layout2 .image {
-  /* max-width: 100%; */
+  max-width: 100%;
   flex-grow: 2;
   /* flex-grow: 2;
   flex: 1;
@@ -69,16 +69,16 @@
   display: flex;
   flex-direction: row;
   gap: 1rem; */
-  transform: scale(100%);
+  transform: scale(80%);
 
-  max-width: 70%;
+  /* max-width: 100%; */
 
   display: flex;
   flex-direction: row;
   text-align: center;
+  margin-right: 10%;
 }
 .contenttwo {
-  background-color: red;
   display: flex;
   flex-direction: row;
 }
@@ -96,7 +96,7 @@
 
 .aboutUs.layout2 .texttwo {
   flex: 1;
-  max-width: 50%;
+  /* max-width: 50%; */
   /* flex-grow: 2; */
   /* padding-right: 10px;
   line-height: 30px;
@@ -115,6 +115,7 @@
   /* align-items: center;
   align-content: center; */
   margin-left: 40%;
+  /* margin-right: 2rem; */
 }
 .aboutUs.layout3 .text {
   flex: 1;
