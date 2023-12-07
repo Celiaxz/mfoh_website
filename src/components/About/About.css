@@ -16,16 +16,17 @@
   display: flex;
   align-items: center;
   /* background-color: red; */
+  padding-right: 2rem;
 }
 .aboutUs.layout1 .textone {
   max-width: 60%;
 
   flex: 1;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  /* gap: 1rem; */
   margin-bottom: 10%;
   margin-top: -8%;
 }
@@ -142,12 +143,38 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .aboutUs.layout1 .content {
+  .aboutUs.layout1 .contentone {
     flex-direction: column;
   }
-  .aboutUs.layout2 {
-    flex-direction: column;
+
+  .aboutUs {
+    width: 100%;
   }
+  .aboutUs.layout1 .textone {
+    max-width: 80%;
+    /* flex: 1;
+    text-align: center;
+    padding: 4rem 2rem 0rem -8rem;
+    display: flex;
+    flex-direction: column; */
+    /* gap: 1rem; */
+    /* margin-bottom: 10%;
+    margin-top: -8%; */
+    /* display: flex;
+    text-align: start;
+    flex: none; */
+    padding: 4rem 2rem 2rem 0rem;
+  }
+  .contentone {
+    max-width: 100%;
+    display: flex;
+    align-items: start;
+    /* background-color: red; */
+  }
+
+  /* .aboutUs.layout2 {
+    flex-direction: column;
+  } */
 }
 
 @media screen and (max-width: 300px) {
