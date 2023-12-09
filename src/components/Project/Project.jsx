@@ -2,6 +2,8 @@ import styles from "./Project.module.css";
 import fig from "../../assets/Assets_mfoh/schoolProject/1.jpeg";
 import fig2 from "../../assets/Assets_mfoh/HumanRightsday/1.jpeg";
 import fig3 from "../../assets/Assets_mfoh/onedaystakeholdersdialogue/GovtDialogue.jpeg";
+import fig4 from "../../assets/Assets_mfoh/coronation picture/crown.jpeg";
+
 const Items = [
   {
     thumbnailUrl: fig,
@@ -25,6 +27,8 @@ const Items = [
     title:
       "2nd United Nations – Government of Nigeria and Partners Dialogue on Human Rights",
   },
+
+  { thumbnailUrl: fig4, title: "Official Crowning Ceremony" },
 ];
 
 const Project = () => {
