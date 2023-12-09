@@ -1,6 +1,7 @@
 import styles from "./Project.module.css";
 import fig from "../../assets/Assets_mfoh/schoolProject/1.jpeg";
 import fig2 from "../../assets/Assets_mfoh/HumanRightsday/1.jpeg";
+import fig3 from "../../assets/Assets_mfoh/onedaystakeholdersdialogue/GovtDialogue.jpeg";
 const Items = [
   {
     thumbnailUrl: fig,
@@ -18,6 +19,11 @@ const Items = [
     thumbnailUrl: fig,
     title: "Partnership with Legal Aid Council Nigeria",
     body: "In order to continue to proactively advance the task of helping indigents and persons with special needs in Nigeria, MFOH Nigeria proposed a collaborative effort with the Legal Aid Council in such a manner to encourage an atmosphere of alliance to effectively and efficiently establish and maintain objectives and commitments with regard to all matters related to easy access to justice for the indigents. At a strategic meeting between the team of Miss Face of Humanity Nigeria and senior staff of the Legal Aid Council at the Boardroom of the Legal Aid Council in Abuja both parties pledged to seek avenues to make it possible for everybody, irrespective of religion, sex, and tribe to have equal access to justice, whether rich or poor.",
+  },
+  {
+    thumbnailUrl: fig3,
+    title:
+      "2nd United Nations – Government of Nigeria and Partners Dialogue on Human Rights",
   },
 ];
 
