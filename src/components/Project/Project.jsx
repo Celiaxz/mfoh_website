@@ -3,7 +3,7 @@ import fig from "../../assets/Assets_mfoh/schoolProject/1.jpeg";
 import fig2 from "../../assets/Assets_mfoh/HumanRightsday/1.jpeg";
 import fig3 from "../../assets/Assets_mfoh/onedaystakeholdersdialogue/GovtDialogue.jpeg";
 import fig4 from "../../assets/Assets_mfoh/coronation picture/crown.jpeg";
-
+import fig5 from "../../assets/Assets_mfoh/legal aiid council/unitedNations.jpeg";
 const Items = [
   {
     thumbnailUrl: fig,
@@ -29,6 +29,10 @@ const Items = [
   },
 
   { thumbnailUrl: fig4, title: "Official Crowning Ceremony" },
+  {
+    thumbnailUrl: fig5,
+    title: "Courtsey Visit to United Nations Office in Nigeria",
+  },
 ];
 
 const Project = () => {
