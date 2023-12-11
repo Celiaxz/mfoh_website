@@ -5,7 +5,7 @@ import fig3 from "../../assets/Assets_mfoh/onedaystakeholdersdialogue/GovtDialog
 import fig4 from "../../assets/Assets_mfoh/coronation picture/crown.jpeg";
 import fig5 from "../../assets/Assets_mfoh/Coutsey visit to United Nations/un.jpeg";
 import fig6 from "../../assets/Assets_mfoh/national human right commission/humanrightcommission.jpeg";
-import fig7 from "../../assets/Assets_mfoh/legal aiid council/legalaidcouncil.jpeg";
+import fig7 from "../../assets/Assets_mfoh/legal aiid council/legalco.jpeg";
 import logo from "../../assets/Assets_mfoh/logo/logo.jpg";
 const Items = [
   {
