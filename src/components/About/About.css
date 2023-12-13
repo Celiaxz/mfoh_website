@@ -87,12 +87,14 @@
   align-items: center;
   gap: 70px;
 } */
-/* .aboutUs.layout2 .title {
+.aboutUs.layout2 .title {
   font-weight: 800;
   margin-bottom: 10px;
   padding-left: 20%;
   text-transform: uppercase;
-} */
+  text-shadow: 1px 1px 1px rgba(207, 207, 207, 0.6);
+  color: #be7b16;
+}
 
 .aboutUs.layout2 .texttwo {
   flex: 1;
