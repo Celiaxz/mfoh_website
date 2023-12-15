@@ -39,26 +39,26 @@ export default function Apply() {
   const validateForm = () => {
     const errors = {};
     if (firstName.trim() === "") {
-      errors.firstName = "First name is required";
+      errors.firstName = "* First name is required";
     }
 
     if (lastName.trim() === "") {
-      errors.lastName = "Last name is required ";
+      errors.lastName = "* Last name is required ";
     }
     if (email.trim() === "") {
-      errors.email = "Email is required";
+      errors.email = "* Email is required";
     }
     if (objective.trim() === "") {
-      errors.objective = "objective is required";
+      errors.objective = " * objective is required";
     }
     if (phone.trim() === "") {
-      errors.phone = "phone is required";
+      errors.phone = "* phone is required";
     }
     if (birthDate.trim() === "") {
-      errors.birthDate = "birthDate is required";
+      errors.birthDate = " * Date of birth is required";
     }
     if (stateOrigin.trim() === "") {
-      errors.stateOrigin = "birthDate is required";
+      errors.stateOrigin = "* state of origin is required";
     }
 
     setFormErrors(errors);
