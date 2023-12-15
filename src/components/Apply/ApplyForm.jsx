@@ -237,8 +237,8 @@ export default function Apply() {
                   value={birthDate}
                   onChange={birthDateHandler}
                 />
-                {formErrors.firstName && ( // New line
-                  <span className="errorMessage">{formErrors.firstName}</span>
+                {formErrors.birthDate && ( // New line
+                  <span className="errorMessage">{formErrors.birthDate}</span>
                 )}
               </label>
             </div>
@@ -252,8 +252,8 @@ export default function Apply() {
                   value={stateOrigin}
                   onChange={stateOriginHandler}
                 />
-                {formErrors.firstName && ( // New line
-                  <span className="errorMessage">{formErrors.firstName}</span>
+                {formErrors.stateOrigin && ( // New line
+                  <span className="errorMessage">{formErrors.stateOrigin}</span>
                 )}
               </label>{" "}
             </div>
