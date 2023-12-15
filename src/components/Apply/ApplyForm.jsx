@@ -69,39 +69,35 @@ export default function Apply() {
   const handleSubmit = async (e) => {
     console.log("sumbmitting form data to Firestore");
     console.log("first name:", firstName);
+    const isValid = validateForm();
 
-    if (firstName) {
-      const result = await addDoc(collection(db, "registeredCandidates"), {
-        firstName: firstName,
-        lastName: lastName,
-        email: email,
-        phone: phone,
-        objective: objective,
-        birthDate: birthDate,
-        stateOrigin: stateOrigin,
-        timestamp: serverTimestamp(),
-      });
-      console.log("Data sent to Firestore sucessfully", result);
-      setFirstname("");
-      setLastname("");
-      setEmail("");
-      setEmail("");
-      setObjective("");
-      setPhone("");
-      setBirthDate("");
-      setStateOrigin("");
+    if (isValid) {
+      try {
+        const result = await addDoc(collection(db, "registeredCandidates"), {
+          firstName: firstName,
+          lastName: lastName,
+          email: email,
+          phone: phone,
+          objective: objective,
+          birthDate: birthDate,
+          stateOrigin: stateOrigin,
+          timestamp: serverTimestamp(),
+        });
+        console.log("Data sent to Firestore sucessfully", result);
+        setFirstname("");
+        setLastname("");
+        setEmail("");
+        setEmail("");
+        setObjective("");
+        setPhone("");
+        setBirthDate("");
+        setStateOrigin("");
+      } catch (error) {
+        console.error("error sending data ", error);
+      }
+    } else {
+      console.log("form has validation erros");
     }
-
-    const newCandidate = {
-      firstName,
-      lastName,
-      email,
-      phone,
-      objective,
-      birthDate,
-      stateOrigin,
-    };
-    console.log("submitted", newCandidate);
   };
   const url =
     "https://us-central1-mfoh-server.cloudfunctions.net/mfoh/acceptpayment";
@@ -110,33 +106,38 @@ export default function Apply() {
 
   async function paystackpay(e) {
     e.preventDefault();
-    try {
-      const requestBody = {
-        email: email, // Use the email state variable
-        lastName: lastName,
-        firstName: firstName,
-        phone: phone,
-        objective: objective,
-        birthDate: birthDate,
-        stateOrigin: stateOrigin,
-      };
-      const response = await axios.post(url, requestBody, {
-        headers: {
-          "X-Requested-With": "XMLHttpRequest",
-        },
-      });
-      console.log("Response from Paystack:", response);
+    const isValid = validateForm();
+    if (isValid) {
+      try {
+        const requestBody = {
+          email: email, // Use the email state variable
+          lastName: lastName,
+          firstName: firstName,
+          phone: phone,
+          objective: objective,
+          birthDate: birthDate,
+          stateOrigin: stateOrigin,
+        };
+        const response = await axios.post(url, requestBody, {
+          headers: {
+            "X-Requested-With": "XMLHttpRequest",
+          },
+        });
+        console.log("Response from Paystack:", response);
 
-      if (response.data && response.data.data.authorization_url) {
-        const authorization_url = response.data.data.authorization_url;
-        console.log("Authorization URL:", authorization_url);
-        // setPayresult(authorization_url);
-        window.location.href = authorization_url;
-      } else {
-        console.error("No authorization_url found in the response");
+        if (response.data && response.data.data.authorization_url) {
+          const authorization_url = response.data.data.authorization_url;
+          console.log("Authorization URL:", authorization_url);
+          // setPayresult(authorization_url);
+          window.location.href = authorization_url;
+        } else {
+          console.error("No authorization_url found in the response");
+        }
+      } catch (error) {
+        console.error("Error while handling:", error);
       }
-    } catch (error) {
-      console.error("Error while handling:", error);
+    } else {
+      console.log("Form has validation errors ");
     }
     handleSubmit();
   }
@@ -157,6 +158,9 @@ export default function Apply() {
                   value={firstName}
                   onChange={firstNameHandler}
                 />
+                {formErrors.firstName && ( // New line
+                  <span className="errorMessage">{formErrors.firstName}</span>
+                )}
               </label>
             </div>
             <div className="input-box">
@@ -169,8 +173,10 @@ export default function Apply() {
                   placeholder="Enter your last name"
                   value={lastName}
                   onChange={lastNameHandler}
-                  required
                 />
+                {formErrors.lastName && ( // New line
+                  <span className="errorMessage">{formErrors.lastName}</span>
+                )}
               </label>
             </div>
             <div className="input-box">
