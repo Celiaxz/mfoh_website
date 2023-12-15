@@ -12,6 +12,7 @@ export default function Apply() {
   const [phone, setPhone] = useState("");
   const [birthDate, setBirthDate] = useState("");
   const [stateOrigin, setStateOrigin] = useState("");
+  const [formErrors, setFormErrors] = useState({});
 
   const firstNameHandler = (e) => {
     setFirstname(e.target.value);
@@ -33,6 +34,36 @@ export default function Apply() {
   };
   const stateOriginHandler = (e) => {
     setStateOrigin(e.target.value);
+  };
+
+  const validateForm = () => {
+    const errors = {};
+    if (firstName.trim() === "") {
+      errors.firstName = "First name is required";
+    }
+
+    if (lastName.trim() === "") {
+      errors.lastName = "Last name is required ";
+    }
+    if (email.trim() === "") {
+      errors.email = "Email is required";
+    }
+    if (objective.trim() === "") {
+      errors.objective = "objective is required";
+    }
+    if (phone.trim() === "") {
+      errors.phone = "phone is required";
+    }
+    if (birthDate.trim() === "") {
+      errors.birthDate = "birthDate is required";
+    }
+    if (stateOrigin.trim() === "") {
+      errors.stateOrigin = "birthDate is required";
+    }
+
+    setFormErrors(errors);
+    // If there are no errors, return true indicating the form is valid
+    return Object.keys(errors).length === 0;
   };
 
   const handleSubmit = async (e) => {
