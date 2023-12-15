@@ -189,6 +189,9 @@ export default function Apply() {
                   value={email}
                   onChange={emailHandler}
                 />
+                {formErrors.email && ( // New line
+                  <span className="errorMessage">{formErrors.email}</span>
+                )}
               </label>{" "}
             </div>
             <div className="input-box">
@@ -202,6 +205,9 @@ export default function Apply() {
                   value={phone}
                   onChange={phoneeHandler}
                 />
+                {formErrors.phone && ( // New line
+                  <span className="errorMessage">{formErrors.phone}</span>
+                )}
               </label>
             </div>
             <div className="input-box">
@@ -215,6 +221,9 @@ export default function Apply() {
                   value={objective}
                   onChange={objectiveHandler}
                 />
+                {formErrors.objective && ( // New line
+                  <span className="errorMessage">{formErrors.objective}</span>
+                )}
               </label>
             </div>
             <div className="input-box">
@@ -228,6 +237,9 @@ export default function Apply() {
                   value={birthDate}
                   onChange={birthDateHandler}
                 />
+                {formErrors.firstName && ( // New line
+                  <span className="errorMessage">{formErrors.firstName}</span>
+                )}
               </label>
             </div>
             <div className="input-box">
@@ -240,6 +252,9 @@ export default function Apply() {
                   value={stateOrigin}
                   onChange={stateOriginHandler}
                 />
+                {formErrors.firstName && ( // New line
+                  <span className="errorMessage">{formErrors.firstName}</span>
+                )}
               </label>{" "}
             </div>
           </div>
