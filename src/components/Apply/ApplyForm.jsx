@@ -111,9 +111,9 @@ export default function Apply() {
   //   };
   //   console.log("submitted", newCandidate);
   // };
-  // const url =
-  //   "https://us-central1-mfoh-server.cloudfunctions.net/mfoh/acceptpayment";
-  const url = "http://localhost:5000/acceptpayment";
+  const url =
+    "https://us-central1-mfoh-server.cloudfunctions.net/mfoh/acceptpayment";
+  // const url = "http://localhost:5000/acceptpayment";
   // console.log(url);
 
   async function paystackpay(e) {
