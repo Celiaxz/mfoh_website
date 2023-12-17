@@ -166,7 +166,9 @@
     /* display: flex;
     text-align: start;
     flex: none; */
-    padding: 4rem 0rem 6rem 3rem;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0rem 5rem 3rem;
   }
   .contentone {
     max-width: 100%;
