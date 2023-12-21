@@ -2,7 +2,7 @@ import { Teamcontents } from "./TeamContents";
 import "./Team.css";
 export default function Team() {
   return (
-    <>
+    <div id="section-team">
       <div className="teamMain">
         <div className="teamCont">
           <h1 className="teamMotto">Our Fantastic Team </h1>
@@ -23,6 +23,6 @@ export default function Team() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

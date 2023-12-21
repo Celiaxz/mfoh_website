@@ -51,7 +51,11 @@ export default function Navbar() {
             >
               About
             </NavLink>
-            <NavLink to="/team" className={styles.list}>
+            <NavLink
+              to="/team"
+              className={styles.list}
+              onClick={() => smoothScrollTo("section-team")}
+            >
               Team
             </NavLink>
             <NavLink
