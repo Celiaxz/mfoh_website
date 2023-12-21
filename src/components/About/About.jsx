@@ -3,8 +3,8 @@ import { contents } from "./contents";
 import "./About.css";
 export default function About() {
   return (
-    <div className="aboutUs">
-      <div id="section-about">
+    <div id="section-about">
+      <div className="aboutUs">
         {contents.map((content, index) => {
           return (
             <AboutUs

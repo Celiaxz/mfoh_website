@@ -12,7 +12,7 @@ export default function Navbar() {
   const smoothScrollTo = (elementId) => {
     const element = document.getElementById(elementId);
     if (element) {
-      element.scrollIntoview({
+      element.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
