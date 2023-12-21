@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Project.module.css";
 import fig from "../../assets/Assets_mfoh/schoolProject/1.jpeg";
 import fig2 from "../../assets/Assets_mfoh/HumanRightsday/1.jpeg";

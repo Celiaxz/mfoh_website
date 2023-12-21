@@ -8,6 +8,16 @@ import { CiMenuFries } from "react-icons/ci";
 export default function Navbar() {
   const [onScroll, settOnScroll] = useState(false);
   const [isToggled, setIsToggled] = useState(false);
+  // function to handle smooth scrolling to section
+  const smoothScrollTo = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoview({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
   window.onscroll = function () {
     if (Math.round(window.pageYOffset) > 100) {
       settOnScroll(true);
@@ -34,7 +44,11 @@ export default function Navbar() {
               Home
             </NavLink>
             {/* <NavLink to="/">Home</NavLink> */}
-            <NavLink to="/about-us" className={styles.list}>
+            <NavLink
+              to="/about-us"
+              className={styles.list}
+              onClick={() => smoothScrollTo("section-about")}
+            >
               About
             </NavLink>
             <NavLink to="/team" className={styles.list}>
