@@ -41,52 +41,54 @@ advocacy is 'Equality for all through Education'  ",
 
 export default function Ambassador() {
   return (
-    <div className="Ambassador">
-      <h1 className="intro">Our 2023 Ambassador</h1>
-
-      {ambassadorCont.map((oneContent) => {
-        return (
-          <div className="ambassadorCont">
-            <p className="text">{oneContent.text}</p>
-            <div>
-              <img src={oneContent.image} alt="" />
-            </div>
-          </div>
-        );
-      })}
-
-      <div className="aboutAmbassador">
-        <h1>Why Rita Chika Ezenwa?</h1>
-      </div>
-      <div className="whyAmbassador">
-        <ul>
-          <li>
-            Her passion and love for humanitarian activities which is the main
-            goal of Miss Face of Humanity desirable by the international
-            organisation.
-          </li>
-          <li>
-            Her queenly aura and great personality that attracts people to her
-            naturally.
-          </li>
-          <li>
-            Her hard-working and diligent character that will put the
-            organisation and brands in the forefront of the world Her gentle ,
-            humble, kind, compassionate, loving and respectable character that
-            is easy for many stakeholders to work with.
-          </li>
-          <li>
-            Her beautiful looks and flashy color that many brands will be
-            attracted to easily.
-          </li>
-          <li>
-            Her story is an inspiration for many to learn from Her presence is
-            full of grace, strength and hope
-          </li>
-        </ul>
-      </div>
+    <div id="section-Abassador">
       <div className="Ambassador">
-        <h1>Awards</h1>
+        <h1 className="intro">Our 2023 Ambassador</h1>
+
+        {ambassadorCont.map((oneContent) => {
+          return (
+            <div className="ambassadorCont">
+              <p className="text">{oneContent.text}</p>
+              <div>
+                <img src={oneContent.image} alt="" />
+              </div>
+            </div>
+          );
+        })}
+
+        <div className="aboutAmbassador">
+          <h1>Why Rita Chika Ezenwa?</h1>
+        </div>
+        <div className="whyAmbassador">
+          <ul>
+            <li>
+              Her passion and love for humanitarian activities which is the main
+              goal of Miss Face of Humanity desirable by the international
+              organisation.
+            </li>
+            <li>
+              Her queenly aura and great personality that attracts people to her
+              naturally.
+            </li>
+            <li>
+              Her hard-working and diligent character that will put the
+              organisation and brands in the forefront of the world Her gentle ,
+              humble, kind, compassionate, loving and respectable character that
+              is easy for many stakeholders to work with.
+            </li>
+            <li>
+              Her beautiful looks and flashy color that many brands will be
+              attracted to easily.
+            </li>
+            <li>
+              Her story is an inspiration for many to learn from Her presence is
+              full of grace, strength and hope
+            </li>
+          </ul>
+        </div>
+        <div className="Ambassador">
+          <h1>Awards</h1>
+        </div>
       </div>
     </div>
   );
