@@ -84,7 +84,12 @@ export default function Navbar() {
               <ul className={styles.dropDown}>
                 <li className={styles.list}>
                   {" "}
-                  <NavLink to="/project">Project</NavLink>
+                  <NavLink
+                    to="/project"
+                    onClick={() => smoothScrollTo("section-project")}
+                  >
+                    Project
+                  </NavLink>
                 </li>
 
                 <li className={styles.list}>

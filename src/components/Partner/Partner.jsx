@@ -2,7 +2,7 @@ import styles from "./Partner.module.css";
 import PartnerForm from "./PartnerForm";
 const Partner = () => {
   return (
-    <div className={styles.partner}>
+    <div className={styles.partner} id="section-partner">
       <div className={styles.partnerContainer}>
         <div className={styles.partnerDescription}>
           We are currently looking for Partnership/Sponsorship for the

@@ -58,7 +58,7 @@ const Items = [
 
 const Project = () => {
   return (
-    <div className={styles.projectContainer}>
+    <div className={styles.projectContainer} Id="section-project">
       <div className={styles.projectContainer__items}>
         <h1>Projects</h1>
 
@@ -70,11 +70,15 @@ const Project = () => {
                     key={index}
                     className={styles.projectContainer__items_box_single}
                   >
-                    <img src={single.thumbnailUrl} alt="" />
-                    <div className={styles.projectTitleContainer}>
-                      <div className={styles.projectTitle}>{single.title}</div>
-                      <button>Read More ... </button>
-                    </div>
+                    <Link to={"/blog/${{}"}>
+                      <img src={single.thumbnailUrl} alt="" />
+                      <div className={styles.projectTitleContainer}>
+                        <div className={styles.projectTitle}>
+                          {single.title}
+                        </div>
+                        <button>Read More ... </button>
+                      </div>
+                    </Link>
                   </div>
                 );
               })
