@@ -40,7 +40,11 @@ export default function Navbar() {
               styles.navList + " " + `${isToggled ? styles.active : ""}`
             }
           >
-            <NavLink to="/" className={styles.list}>
+            <NavLink
+              to="/"
+              className={styles.list}
+              onClick={() => smoothScrollTo("sectionFeature")}
+            >
               Home
             </NavLink>
             {/* <NavLink to="/">Home</NavLink> */}

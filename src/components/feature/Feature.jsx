@@ -3,7 +3,7 @@ import MainImg from "../../assets/Assets_mfoh/queens_picture/2.jpeg";
 import styles from "./Feature.module.css";
 const Feature = () => {
   return (
-    <div className={styles.feature}>
+    <div className={styles.feature} id="sectionFeature">
       <div className={styles.featureContent}>
         <h1 className={styles.featureTitle}>Miss Face of Humanity</h1>
         <h3 className={styles.featureSubTitle}>NIGERIA</h3>
