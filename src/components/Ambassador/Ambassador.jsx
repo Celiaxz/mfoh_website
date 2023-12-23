@@ -41,7 +41,7 @@ advocacy is 'Equality for all through Education'  ",
 
 export default function Ambassador() {
   return (
-    <div id="section-Abassador">
+    <div id="section-Ambassador">
       <div className="Ambassador">
         <h1 className="intro">Our 2023 Ambassador</h1>
 
