@@ -3,7 +3,7 @@ import Apply from "./ApplyForm";
 export default function Application() {
   return (
     <>
-      <div className="applicationContMain">
+      <div className="applicationContMain" id="section-application">
         <div className="appyContainer">
           <div className="description">APPLY FOR 2024 EDITION</div>
           <div className="requirement">

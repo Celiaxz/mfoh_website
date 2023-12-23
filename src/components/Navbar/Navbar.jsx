@@ -61,11 +61,15 @@ export default function Navbar() {
             <NavLink
               to="/ambassador"
               className={styles.list}
-              onClick={() => smoothScrollTo("section-Abassador")}
+              onClick={() => smoothScrollTo("section-Ambassador")}
             >
               Ambassador
             </NavLink>
-            <NavLink to="/apply" className={styles.list}>
+            <NavLink
+              to="/apply"
+              className={styles.list}
+              onClick={() => smoothScrollTo("section-application")}
+            >
               Application
             </NavLink>
             {/* <NavLink to="/contact-us" className={styles.list}>
