@@ -55,13 +55,7 @@ export default function Navbar() {
             >
               About
             </NavLink>
-            <NavLink
-              to="/team"
-              className={styles.list}
-              onClick={() => smoothScrollTo("section-team")}
-            >
-              Team
-            </NavLink>
+
             <NavLink
               to="/ambassador"
               className={styles.list}
@@ -75,6 +69,13 @@ export default function Navbar() {
               onClick={() => smoothScrollTo("section-application")}
             >
               Application
+            </NavLink>
+            <NavLink
+              to="/team"
+              className={styles.list}
+              onClick={() => smoothScrollTo("section-team")}
+            >
+              Team
             </NavLink>
             {/* <NavLink to="/contact-us" className={styles.list}>
               Contact
@@ -93,7 +94,12 @@ export default function Navbar() {
                 </li>
 
                 <li className={styles.list}>
-                  <NavLink to="/partner-with-us">Partner with us</NavLink>
+                  <NavLink
+                    to="/partner-with-us"
+                    onClick={() => smoothScrollTo("section-partner")}
+                  >
+                    Partner with us
+                  </NavLink>
                 </li>
               </ul>
             </li>
