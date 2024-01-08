@@ -20,9 +20,9 @@ export default function AboutUs(props) {
         {layout === "layout2" && (
           <>
             <div className="contenttwo">
-              <div className="image">
+              {/* <div className="image">
                 {image && <img src={image} alt="about" />}
-              </div>
+              </div> */}
               <div className="title2text2">
                 <div className="title">
                   <h1>{title}</h1>

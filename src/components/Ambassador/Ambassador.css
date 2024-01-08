@@ -5,6 +5,7 @@
   padding: 10% 5% 2% 30%;
   font-size: 2em;
   color: #996515;
+  font-weight: 600;
 }
 
 .ambassadorCont {
@@ -34,6 +35,11 @@
   padding-top: 4%;
   padding-bottom: 3%;
   font-size: 1.5em;
+}
+.aboutAmbassador h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #996515;
 }
 .whyAmbassador ul {
   width: 80%;
