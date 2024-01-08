@@ -16,12 +16,16 @@
   padding-left: 10%;
 }
 .ambassadorCont p {
+  max-width: 70%;
   font-size: 1em;
   line-height: 30px;
   text-align: justify;
+  margin-bottom: 5%;
 }
 .ambassadorCont img {
-  height: 300px;
+  max-width: 250px;
+  height: 180px;
+  margin-left: -150px;
 }
 .aboutAmbassador {
   display: flex;
