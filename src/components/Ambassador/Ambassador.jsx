@@ -86,9 +86,7 @@ export default function Ambassador() {
             </li>
           </ul>
         </div>
-        <div className="Ambassador">
-          <h1>Awards</h1>
-        </div>
+        <div className="Ambassador">{/* <h1>Awards</h1> */}</div>
       </div>
     </div>
   );
