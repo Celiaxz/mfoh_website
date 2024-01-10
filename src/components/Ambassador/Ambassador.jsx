@@ -57,7 +57,7 @@ export default function Ambassador() {
         })}
 
         <div className="aboutAmbassador">
-          <h1>Why Rita Chika Ezenwa?</h1>
+          <h1 className="motivation">Why Rita Chika Ezenwa?</h1>
         </div>
         <div className="whyAmbassador">
           <ul>

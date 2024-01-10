@@ -36,13 +36,13 @@
   padding-bottom: 3%;
   font-size: 1.5em;
 }
-.aboutAmbassador h1 {
-  font-size: 1.5em;
-  font-weight: 600;
+.aboutAmbassador .motivation {
+  text-align: center;
+  padding: 2% 0% 0% 8%;
+  font-size: 1em;
   color: #996515;
-  margin-right: 7%;
-  padding-right: 3%;
-  padding-bottom: -3%;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .whyAmbassador ul {
   width: 80%;
@@ -66,5 +66,14 @@
   .ambassadorCont img {
     max-width: 100%;
     height: auto;
+  }
+  .aboutAmbassador p {
+    font-size: 1em;
+  }
+  .whyAmbassador ul {
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1em;
+    width: 100%;
   }
 }
