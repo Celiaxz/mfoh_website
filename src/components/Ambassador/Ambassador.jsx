@@ -35,6 +35,7 @@ has also won the award of Most Fashionable Queen of the Year Award in\
 2019, Top 60 under 40 Most Influential/Inspiring Paragon Personality\
 Award 2021, and nominated for the Flourish Nobel Awards in 2021. Her\
 advocacy is 'Equality for all through Education'  ",
+    image: `${photoTwo}`,
   },
 ];
 
