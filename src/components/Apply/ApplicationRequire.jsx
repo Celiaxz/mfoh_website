@@ -23,35 +23,36 @@ export default function Application() {
               <ol>
                 <li>
                   {" "}
-                  If a candidate was born in a country that doesn’t give
+                  1. If a candidate was born in a country that doesn’t give
                   citizenship to immigrants from birth, they can still represent
-                  that country as long as they are Permanent residents. 2.
+                  that country as long as they are Permanent residents.
                 </li>
                 <li>
-                  Candidates who lived in a country for more than 10 years and
-                  does not have the passport can still represent the country as
-                  long as they are Permanent Residents
+                  2. Candidates who lived in a country for more than 10 years
+                  and does not have the passport can still represent the country
+                  as long as they are Permanent Residents
                 </li>
               </ol>
               <ul>
                 <li>
-                  Delegates must be of good moral standard and have no criminal
-                  record
+                  3. Delegates must be of good moral standard and have no
+                  criminal record
                 </li>
                 <li>
-                  Delegates must not be married, divorced or born children.
+                  4. Delegates must not be married, divorced or born children.
                 </li>
                 <li>
                   Delegates must be willing to serve Humanity and uphold the
                   crown with integrity
                 </li>
                 <li>
-                  Delegates must be available and willing to travel to the host
-                  country of the Miss Face of Humanity International showcase at
-                  a date set forth by the Miss Face of Humanity Organization.
+                  5. Delegates must be available and willing to travel to the
+                  host country of the Miss Face of Humanity International
+                  showcase at a date set forth by the Miss Face of Humanity
+                  Organization.
                 </li>
                 <li>
-                  There are NO height or size requirements for Miss Face of
+                  6. There are NO height or size requirements for Miss Face of
                   Humanity delegates
                 </li>
               </ul>
