@@ -63,4 +63,8 @@
 
     max-width: 100%;
   }
+  .ambassadorCont img {
+    max-width: 100%;
+    height: auto;
+  }
 }
