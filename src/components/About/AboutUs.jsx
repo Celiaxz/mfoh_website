@@ -6,11 +6,19 @@ export default function AboutUs(props) {
       <div className="aboutUsContainer">
         {layout === "layout1" && (
           <>
-            <div className="title">
+            {/* <div className="title">
               <h1>{title}</h1>
-            </div>
+            </div> */}
             <div className="contentone">
-              <div className="textone">{text}</div>
+              <div className="textone">
+                <div className="title">
+                  <h1>{title}</h1>{" "}
+                </div>
+                <div className="text">
+                  <p>{text}</p>
+                </div>
+              </div>
+
               <div className="image">
                 {image && <img src={image} alt="logo" />}
               </div>
