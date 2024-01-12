@@ -44,3 +44,13 @@
   line-height: 1.6em;
   color: #996515;
 }
+/* @media only screen and (max-width: 700px) {
+  .col-auto button {
+    font-size: 3em;
+  }
+} */
+@media only screen and (max-width: 768px) {
+  .teamCont {
+    font-size: 0.6em;
+  }
+}
