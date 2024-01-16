@@ -10,7 +10,8 @@ import Project from "./components/Project/Project";
 import Team from "./components/Team/Team";
 import Partner from "./components/Partner/Partner";
 import Ambassador from "./components/Ambassador/Ambassador";
-// import Contact from "./components/Contact/Contact";
+// import Contact from "./components/Contact/Contact"
+import MainBlog from "./components/Blog/MainBlog";
 import Footer from "./components/Footer/Footer";
 import Application from "./components/Apply/ApplicationRequire";
 function App() {
