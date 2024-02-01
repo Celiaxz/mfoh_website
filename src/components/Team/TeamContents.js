@@ -63,6 +63,6 @@ export const Teamcontents = [
   {
     image: `${cynthia}`,
     name: "Cynthia Eze",
-    description: "Software Development Manager",
+    description: " Fullstack Web Developer",
   },
 ];
