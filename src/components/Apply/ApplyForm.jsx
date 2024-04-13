@@ -1,4 +1,5 @@
 import "./Apply.css";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { db } from "../../firebase";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
@@ -116,7 +117,8 @@ export default function Apply() {
   // const url = "http://localhost:5000/acceptpayment";
   // console.log(url);
 
-  async function paystackpay(e) {
+  async function redirectstelar(e) {
+    window.open("https://selar.co/7152o7", "_blank").focus();
     e.preventDefault();
     const isValid = validateForm();
     if (isValid) {
@@ -130,21 +132,21 @@ export default function Apply() {
           birthDate: birthDate,
           stateOrigin: stateOrigin,
         };
-        const response = await axios.post(url, requestBody, {
-          headers: {
-            "X-Requested-With": "XMLHttpRequest",
-          },
-        });
-        console.log("Response from Paystack:", response);
+        // const response = await axios.post(url, requestBody, {
+        //   headers: {
+        //     "X-Requested-With": "XMLHttpRequest",
+        //   },
+        // });
+        // console.log("Response from Paystack:", response);
 
-        if (response.data && response.data.data.authorization_url) {
-          const authorization_url = response.data.data.authorization_url;
-          console.log("Authorization URL:", authorization_url);
-          // setPayresult(authorization_url);
-          window.location.href = authorization_url;
-        } else {
-          console.error("No authorization_url found in the response");
-        }
+        // if (response.data && response.data.data.authorization_url) {
+        //   const authorization_url = response.data.data.authorization_url;
+        //   console.log("Authorization URL:", authorization_url);
+        //   // setPayresult(authorization_url);
+        //   window.location.href = authorization_url;
+        // } else {
+        //   console.error("No authorization_url found in the response");
+        // }
       } catch (error) {
         console.error("Error while handling:", error);
       }
@@ -152,7 +154,9 @@ export default function Apply() {
       console.log("Form has validation errors ");
     }
     handleSubmit();
+    // const redirectstelar = () => {};
   }
+
   return (
     <div className="main">
       <div className="appyFormContainer">
@@ -278,13 +282,11 @@ export default function Apply() {
               onClick={paystackpay}
             />
           </div> */}
-
+          {/* className="submitBtn" onClick={paystackpay} */}
           <div className="button">
-            <button className="submitBtn" onClick={paystackpay}>
-              {" "}
-              Pay with Paystack
-            </button>
+            <button onClick={redirectstelar}>Pay with Paystack</button>
           </div>
+          <button onClick={redirectstelar}>Pay with Stellar</button>
         </form>
       </div>
     </div>
