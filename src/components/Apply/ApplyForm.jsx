@@ -284,9 +284,8 @@ export default function Apply() {
           </div> */}
           {/* className="submitBtn" onClick={paystackpay} */}
           <div className="button">
-            <button onClick={redirectstelar}>Pay with Paystack</button>
+            <button onClick={redirectstelar}>Pay with Selar</button>
           </div>
-          <button onClick={redirectstelar}>Pay with Stellar</button>
         </form>
       </div>
     </div>
