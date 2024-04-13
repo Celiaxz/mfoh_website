@@ -34,32 +34,32 @@ export const Teamcontents = [
     description: "Brand Ambassador",
   },
 
-  {
-    image: `${beauty}`,
-    name: "Winner Akpojotor",
-    description: "Social Media Analyst",
-  },
+  // {
+  //   image: `${beauty}`,
+  //   name: "Winner Akpojotor",
+  //   description: "Social Media Analyst",
+  // },
 
-  {
-    image: `${Ben10}`,
-    name: "John Orok",
-    description: "Logistics Manager",
-  },
-  {
-    image: `${Emma}`,
-    name: "Emmanuel Inyang",
-    description: "Event Manager",
-  },
-  {
-    image: `${Kemi}`,
-    name: "Kemi Kehinde Agi",
-    description: "Financial Operations Manager",
-  },
-  {
-    image: `${Zen}`,
-    name: "Donald Agbonifo",
-    description: "Brand Strategist",
-  },
+  // {
+  //   image: `${Ben10}`,
+  //   name: "John Orok",
+  //   description: "Logistics Manager",
+  // },
+  // {
+  //   image: `${Emma}`,
+  //   name: "Emmanuel Inyang",
+  //   description: "Event Manager",
+  // },
+  // {
+  //   image: `${Kemi}`,
+  //   name: "Kemi Kehinde Agi",
+  //   description: "Financial Operations Manager",
+  // },
+  // {
+  //   image: `${Zen}`,
+  //   name: "Donald Agbonifo",
+  //   description: "Brand Strategist",
+  // },
   {
     image: `${cynthia}`,
     name: "Cynthia Eze",
