@@ -112,13 +112,13 @@ export default function Apply() {
   //   };
   //   console.log("submitted", newCandidate);
   // };
-  const url =
-    "https://us-central1-mfoh-server.cloudfunctions.net/mfoh/acceptpayment";
-  // const url = "http://localhost:5000/acceptpayment";
-  // console.log(url);
+  // const url =
+  //   "https://us-central1-mfoh-server.cloudfunctions.net/mfoh/acceptpayment";
+  const url = "http://localhost:5000/acceptpayment";
+  console.log(url);
 
-  async function redirectstelar(e) {
-    window.open("https://selar.co/7152o7", "_blank").focus();
+  async function paystackpay(e) {
+    // window.open("https://selar.co/7152o7", "_blank").focus();
     e.preventDefault();
     const isValid = validateForm();
     if (isValid) {
@@ -132,21 +132,22 @@ export default function Apply() {
           birthDate: birthDate,
           stateOrigin: stateOrigin,
         };
-        // const response = await axios.post(url, requestBody, {
-        //   headers: {
-        //     "X-Requested-With": "XMLHttpRequest",
-        //   },
-        // });
-        // console.log("Response from Paystack:", response);
+        console.log("full");
+        const response = await axios.post(url, requestBody, {
+          headers: {
+            "X-Requested-With": "XMLHttpRequest",
+          },
+        });
+        console.log("Response from Paystack:", response);
 
-        // if (response.data && response.data.data.authorization_url) {
-        //   const authorization_url = response.data.data.authorization_url;
-        //   console.log("Authorization URL:", authorization_url);
-        //   // setPayresult(authorization_url);
-        //   window.location.href = authorization_url;
-        // } else {
-        //   console.error("No authorization_url found in the response");
-        // }
+        if (response.data && response.data.data.authorization_url) {
+          const authorization_url = response.data.data.authorization_url;
+          console.log("Authorization URL:", authorization_url);
+          // setPayresult(authorization_url);
+          window.location.href = authorization_url;
+        } else {
+          console.error("No authorization_url found in the response");
+        }
       } catch (error) {
         console.error("Error while handling:", error);
       }
@@ -283,8 +284,12 @@ export default function Apply() {
             />
           </div> */}
           {/* className="submitBtn" onClick={paystackpay} */}
+
           <div className="button">
-            <button onClick={redirectstelar}>Pay with Selar</button>
+            <button className="submitBtn" onClick={paystackpay}>
+              {" "}
+              Pay with Paystack
+            </button>
           </div>
         </form>
       </div>

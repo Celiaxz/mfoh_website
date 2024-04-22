@@ -59,10 +59,9 @@ export const Teamcontents = [
   //   image: `${Zen}`,
   //   name: "Donald Agbonifo",
   //   description: "Brand Strategist",
+  // }, // {
+  //   image: `${cynthia}`,
+  //   name: "Cynthia Eze",
+  //   description: " Fullstack Web Developer",
   // },
-  {
-    image: `${cynthia}`,
-    name: "Cynthia Eze",
-    description: " Fullstack Web Developer",
-  },
 ];
